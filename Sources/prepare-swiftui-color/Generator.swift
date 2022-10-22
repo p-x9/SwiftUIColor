@@ -73,7 +73,7 @@ extension Generator {
             guard let propertyName = $0.components(separatedBy: "_").last else { return }
             output +=
             """
-            \(tab)\(tab)public static let \(propertyName) = Color("\(suffix)/\($0)", bundle: .module)\n
+            \(tab)\(tab)public static let \(propertyName) = Color("\(suffix)/\($0)", bundle: .myModule)\n
             """
         }
         
