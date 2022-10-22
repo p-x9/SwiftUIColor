@@ -42,14 +42,13 @@ class Generator {
         try childDirectories.forEach {
             try generate(for: assetURL.appendingPathComponent($0))
         }
-        try generate(for: assetURL, outputFileName: "Color+")
     }
 }
 
 extension Generator {
-    private func generate(for directory: URL, outputFileName: String? = nil) throws {
+    private func generate(for directory: URL) throws {
         guard fileManger.fileExists(atPath: directory.path) else { return }
-        let suffix = outputFileName ?? directory.lastPathComponent
+        let suffix = directory.lastPathComponent
         
         let colorNames = try? fileManger.contentsOfDirectory(atPath: directory.path)
             .filter {
@@ -74,7 +73,7 @@ extension Generator {
             guard let propertyName = $0.components(separatedBy: "_").last else { return }
             output +=
             """
-            \(tab)\(tab)public static let \(propertyName) = Color("\($0)", bundle: .module)\n
+            \(tab)\(tab)public static let \(propertyName) = Color("\(suffix)/\($0)", bundle: .module)\n
             """
         }
         
