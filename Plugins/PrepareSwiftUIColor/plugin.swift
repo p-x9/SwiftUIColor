@@ -14,7 +14,7 @@ struct PrepareSwiftUIColor: BuildToolPlugin {
     func createBuildCommands(context: PackagePlugin.PluginContext, target: PackagePlugin.Target) async throws -> [PackagePlugin.Command] {
         let executablePath = try context.tool(named: "prepare-swiftui-color-bin").path
         
-        let mediaPath = context.package.directory.appending("Sources/SwiftUIColor/Resources/Media.xcassets")
+        let mediaPath = context.package.directory.appending("Sources/SwiftUIColor/Assets/Media.xcassets")
         let outputPath = context.package.directory.appending("Sources/SwiftUIColor/")
         
         return [

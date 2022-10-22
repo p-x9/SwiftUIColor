@@ -26,7 +26,7 @@ let package = Package(
             name: "SwiftUIColor",
             dependencies: [],
             resources: [
-                .process("Resources")
+                .process("Assets")
             ],
             plugins: [
                 .plugin(name: "PrepareSwiftUIColor")
