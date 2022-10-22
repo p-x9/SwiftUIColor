@@ -2,10 +2,15 @@
   "colors" : [
     {
       "color" : {
-        "platform" : "osx",
-        "reference" : "keyboardFocusIndicatorColor"
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "0.498",
+          "blue" : "0.957",
+          "green" : "0.404",
+          "red" : "0.000"
+        }
       },
-      "idiom" : "mac"
+      "idiom" : "universal"
     },
     {
       "appearances" : [
@@ -15,10 +20,15 @@
         }
       ],
       "color" : {
-        "platform" : "osx",
-        "reference" : "keyboardFocusIndicatorColor"
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "0.498",
+          "blue" : "1.000",
+          "green" : "0.663",
+          "red" : "0.102"
+        }
       },
-      "idiom" : "mac"
+      "idiom" : "universal"
     }
   ],
   "info" : {

@@ -5,7 +5,7 @@
         "platform" : "ios",
         "reference" : "placeholderTextColor"
       },
-      "idiom" : "iphone"
+      "idiom" : "universal"
     },
     {
       "appearances" : [
@@ -18,27 +18,7 @@
         "platform" : "ios",
         "reference" : "placeholderTextColor"
       },
-      "idiom" : "iphone"
-    },
-    {
-      "color" : {
-        "platform" : "ios",
-        "reference" : "placeholderTextColor"
-      },
-      "idiom" : "ipad"
-    },
-    {
-      "appearances" : [
-        {
-          "appearance" : "luminosity",
-          "value" : "dark"
-        }
-      ],
-      "color" : {
-        "platform" : "ios",
-        "reference" : "placeholderTextColor"
-      },
-      "idiom" : "ipad"
+      "idiom" : "universal"
     }
   ],
   "info" : {

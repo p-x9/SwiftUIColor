@@ -5,7 +5,7 @@
         "platform" : "ios",
         "reference" : "secondaryLabelColor"
       },
-      "idiom" : "iphone"
+      "idiom" : "universal"
     },
     {
       "appearances" : [
@@ -18,27 +18,7 @@
         "platform" : "ios",
         "reference" : "secondaryLabelColor"
       },
-      "idiom" : "iphone"
-    },
-    {
-      "color" : {
-        "platform" : "ios",
-        "reference" : "secondaryLabelColor"
-      },
-      "idiom" : "ipad"
-    },
-    {
-      "appearances" : [
-        {
-          "appearance" : "luminosity",
-          "value" : "dark"
-        }
-      ],
-      "color" : {
-        "platform" : "ios",
-        "reference" : "secondaryLabelColor"
-      },
-      "idiom" : "ipad"
+      "idiom" : "universal"
     }
   ],
   "info" : {

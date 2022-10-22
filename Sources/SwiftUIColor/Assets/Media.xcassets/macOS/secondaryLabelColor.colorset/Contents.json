@@ -2,10 +2,10 @@
   "colors" : [
     {
       "color" : {
-        "platform" : "osx",
+        "platform" : "ios",
         "reference" : "secondaryLabelColor"
       },
-      "idiom" : "mac"
+      "idiom" : "universal"
     },
     {
       "appearances" : [
@@ -15,10 +15,10 @@
         }
       ],
       "color" : {
-        "platform" : "osx",
+        "platform" : "ios",
         "reference" : "secondaryLabelColor"
       },
-      "idiom" : "mac"
+      "idiom" : "universal"
     }
   ],
   "info" : {
