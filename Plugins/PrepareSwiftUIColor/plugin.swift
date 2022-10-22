@@ -27,12 +27,6 @@ struct PrepareDebugMenu: BuildToolPlugin {
                 ],
                 outputFilesDirectory: outputPath
             )
-//            .buildCommand(displayName: "Prepare SwiftUI Color",
-//                          executable: executablePath,
-//                          arguments: [
-//                            mediaPath,
-//                            outputPath
-//                          ])
         ]
     }
 }
