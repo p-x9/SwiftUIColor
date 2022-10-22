@@ -5,6 +5,10 @@ import PackageDescription
 
 let package = Package(
     name: "SwiftUIColor",
+    platforms: [
+        .iOS(.v13),
+        .macOS(.v10_15)
+    ],
     products: [
         .library(
             name: "SwiftUIColor",
@@ -16,9 +20,29 @@ let package = Package(
     targets: [
         .target(
             name: "SwiftUIColor",
-            dependencies: []),
+            dependencies: [],
+            plugins: [
+                .plugin(name: "PrepareSwiftUIColor")
+            ]
+        ),
+        .plugin(
+            name: "PrepareSwiftUIColor",
+            capability: .buildTool(),
+            dependencies: [
+                "prepare-swiftui-color-bin"
+            ]
+        ),
+        .executableTarget(
+            name: "prepare-swiftui-color"
+        ),
+        .binaryTarget(
+            name: "prepare-swiftui-color-bin",
+            url: "https://github.com/p-x9/SwiftUIColor/releases/download/0.0.0-a/prepare-swiftui-color-bin.artifactbundle.zip",
+            checksum: "959e8d80a5e42d8860c615bf95737a4ea2dc89e08b6e56175f86b216e33c8f8a"
+        ),
         .testTarget(
             name: "SwiftUIColorTests",
-            dependencies: ["SwiftUIColor"]),
+            dependencies: ["SwiftUIColor"]
+        ),
     ]
 )
