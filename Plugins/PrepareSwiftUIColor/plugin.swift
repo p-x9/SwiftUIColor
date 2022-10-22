@@ -10,7 +10,7 @@ import Foundation
 import PackagePlugin
 
 @main
-struct PrepareDebugMenu: BuildToolPlugin {
+struct PrepareSwiftUIColor: BuildToolPlugin {
     func createBuildCommands(context: PackagePlugin.PluginContext, target: PackagePlugin.Target) async throws -> [PackagePlugin.Command] {
         let executablePath = try context.tool(named: "prepare-swiftui-color-bin").path
         

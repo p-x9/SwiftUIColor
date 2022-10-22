@@ -5,7 +5,7 @@
         "platform" : "ios",
         "reference" : "systemPinkColor"
       },
-      "idiom" : "universal"
+      "idiom" : "iphone"
     },
     {
       "appearances" : [
@@ -18,7 +18,27 @@
         "platform" : "ios",
         "reference" : "systemPinkColor"
       },
-      "idiom" : "universal"
+      "idiom" : "iphone"
+    },
+    {
+      "color" : {
+        "platform" : "ios",
+        "reference" : "systemPinkColor"
+      },
+      "idiom" : "ipad"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "color" : {
+        "platform" : "ios",
+        "reference" : "systemPinkColor"
+      },
+      "idiom" : "ipad"
     }
   ],
   "info" : {

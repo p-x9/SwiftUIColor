@@ -5,7 +5,7 @@
         "platform" : "osx",
         "reference" : "unemphasizedSelectedTextColor"
       },
-      "idiom" : "universal"
+      "idiom" : "mac"
     },
     {
       "appearances" : [
@@ -18,7 +18,7 @@
         "platform" : "osx",
         "reference" : "unemphasizedSelectedTextColor"
       },
-      "idiom" : "universal"
+      "idiom" : "mac"
     }
   ],
   "info" : {

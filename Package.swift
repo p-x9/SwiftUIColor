@@ -14,6 +14,10 @@ let package = Package(
             name: "SwiftUIColor",
             targets: ["SwiftUIColor"]
         ),
+        .executable(
+            name: "prepare-swiftui-color",
+            targets: ["prepare-swiftui-color"]
+        )
     ],
     dependencies: [
     ],
@@ -21,6 +25,9 @@ let package = Package(
         .target(
             name: "SwiftUIColor",
             dependencies: [],
+            resources: [
+                .process("Resources")
+            ],
             plugins: [
                 .plugin(name: "PrepareSwiftUIColor")
             ]
@@ -37,8 +44,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "prepare-swiftui-color-bin",
-            url: "https://github.com/p-x9/SwiftUIColor/releases/download/0.0.1/prepare-swiftui-color-bin.artifactbundle.zip",
-            checksum: "2bb7dc0986263df14b586c75260887846cc29a313a21fb9bea29941f4747f725"
+            url: "https://github.com/p-x9/SwiftUIColor/releases/download/0.0.2/prepare-swiftui-color-bin.artifactbundle.zip",
+            checksum: "79af702800ace001a524e48d4c520389f96df83691eeea1311b95b7e1856ff6e"
         ),
         .testTarget(
             name: "SwiftUIColorTests",
