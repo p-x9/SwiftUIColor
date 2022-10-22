@@ -6,6 +6,19 @@
         "reference" : "systemOrangeColor"
       },
       "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "color" : {
+        "platform" : "osx",
+        "reference" : "systemOrangeColor"
+      },
+      "idiom" : "universal"
     }
   ],
   "info" : {

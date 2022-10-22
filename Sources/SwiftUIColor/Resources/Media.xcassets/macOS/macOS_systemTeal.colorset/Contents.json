@@ -6,6 +6,19 @@
         "reference" : "systemTealColor"
       },
       "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "color" : {
+        "platform" : "osx",
+        "reference" : "systemTealColor"
+      },
+      "idiom" : "universal"
     }
   ],
   "info" : {

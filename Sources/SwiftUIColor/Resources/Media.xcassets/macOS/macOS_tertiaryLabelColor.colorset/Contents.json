@@ -6,6 +6,19 @@
         "reference" : "tertiaryLabelColor"
       },
       "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "color" : {
+        "platform" : "osx",
+        "reference" : "tertiaryLabelColor"
+      },
+      "idiom" : "universal"
     }
   ],
   "info" : {

@@ -6,6 +6,19 @@
         "reference" : "selectedMenuItemTextColor"
       },
       "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "color" : {
+        "platform" : "osx",
+        "reference" : "selectedMenuItemTextColor"
+      },
+      "idiom" : "universal"
     }
   ],
   "info" : {

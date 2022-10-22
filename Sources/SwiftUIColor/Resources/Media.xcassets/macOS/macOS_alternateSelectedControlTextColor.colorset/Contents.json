@@ -6,6 +6,19 @@
         "reference" : "alternateSelectedControlTextColor"
       },
       "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "color" : {
+        "platform" : "osx",
+        "reference" : "alternateSelectedControlTextColor"
+      },
+      "idiom" : "universal"
     }
   ],
   "info" : {

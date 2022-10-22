@@ -6,6 +6,19 @@
         "reference" : "quaternaryLabelColor"
       },
       "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "color" : {
+        "platform" : "osx",
+        "reference" : "quaternaryLabelColor"
+      },
+      "idiom" : "universal"
     }
   ],
   "info" : {

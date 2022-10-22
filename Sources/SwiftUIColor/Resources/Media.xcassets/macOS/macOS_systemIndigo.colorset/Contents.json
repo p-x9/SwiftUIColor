@@ -6,6 +6,19 @@
         "reference" : "systemIndigoColor"
       },
       "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "color" : {
+        "platform" : "osx",
+        "reference" : "systemIndigoColor"
+      },
+      "idiom" : "universal"
     }
   ],
   "info" : {

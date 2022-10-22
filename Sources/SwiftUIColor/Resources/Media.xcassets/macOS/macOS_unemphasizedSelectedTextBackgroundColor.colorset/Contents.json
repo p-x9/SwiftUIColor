@@ -6,6 +6,19 @@
         "reference" : "unemphasizedSelectedTextBackgroundColor"
       },
       "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "color" : {
+        "platform" : "osx",
+        "reference" : "unemphasizedSelectedTextBackgroundColor"
+      },
+      "idiom" : "universal"
     }
   ],
   "info" : {

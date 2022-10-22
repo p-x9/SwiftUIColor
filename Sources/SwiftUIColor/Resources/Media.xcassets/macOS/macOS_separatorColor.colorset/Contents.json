@@ -6,6 +6,19 @@
         "reference" : "separatorColor"
       },
       "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "color" : {
+        "platform" : "osx",
+        "reference" : "separatorColor"
+      },
+      "idiom" : "universal"
     }
   ],
   "info" : {

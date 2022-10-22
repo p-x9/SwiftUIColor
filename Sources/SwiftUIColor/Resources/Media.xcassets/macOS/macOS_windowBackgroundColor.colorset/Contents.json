@@ -6,6 +6,19 @@
         "reference" : "windowBackgroundColor"
       },
       "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "color" : {
+        "platform" : "osx",
+        "reference" : "windowBackgroundColor"
+      },
+      "idiom" : "universal"
     }
   ],
   "info" : {

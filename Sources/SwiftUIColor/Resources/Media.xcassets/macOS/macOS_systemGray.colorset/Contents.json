@@ -6,6 +6,19 @@
         "reference" : "systemGrayColor"
       },
       "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "color" : {
+        "platform" : "osx",
+        "reference" : "systemGrayColor"
+      },
+      "idiom" : "universal"
     }
   ],
   "info" : {
