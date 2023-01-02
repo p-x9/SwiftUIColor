@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "1.0",
+  "artifacts": {
+    "__NAME__": {
+      "version": "__VERSION__",
+      "type": "executable",
+      "variants": [
+        {
+          "path": "prepare-swiftui-color/bin/prepare-swiftui-color",
+          "supportedTriples": [
+            "x86_64-apple-macosx",
+            "arm64-apple-macosx"
+          ]
+        }
+      ]
+    }
+  }
+}

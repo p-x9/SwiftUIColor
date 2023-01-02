@@ -9,3 +9,7 @@ DerivedData/
 .netrc
 
 *.generated.swift
+
+.swiftpm
+prepare-swiftui-color.artifactbundle
+prepare-swiftui-color.artifactbundle.zip
