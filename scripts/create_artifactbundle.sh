@@ -39,7 +39,12 @@ clear_outputs() {
     rm -f "${ARTIFACT_BUNDLE_NAME}.zip"
 }
 
+
 clear_outputs
+
+if [ "$1" = "--clear" ]; then
+ exit
+fi
 
 build_target
 create_artifact_bundle
