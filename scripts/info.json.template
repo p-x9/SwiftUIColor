@@ -6,7 +6,7 @@
       "type": "executable",
       "variants": [
         {
-          "path": "prepare-swiftui-color/bin/prepare-swiftui-color",
+          "path": "__NAME__/bin/__NAME__",
           "supportedTriples": [
             "x86_64-apple-macosx",
             "arm64-apple-macosx"

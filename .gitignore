@@ -11,5 +11,5 @@ DerivedData/
 *.generated.swift
 
 .swiftpm
-prepare-swiftui-color.artifactbundle
-prepare-swiftui-color.artifactbundle.zip
+*.artifactbundle
+*.artifactbundle.zip
