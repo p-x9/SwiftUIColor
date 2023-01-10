@@ -60,7 +60,7 @@ struct ContentView: View {
             .tabItem {
                 Label("macOS", systemImage: "macwindow")
             }
-            
+
         }
     }
 }
