@@ -5,7 +5,7 @@
         "platform" : "ios",
         "reference" : "systemMintColor"
       },
-      "idiom" : "universal"
+      "idiom" : "iphone"
     },
     {
       "appearances" : [
@@ -18,7 +18,94 @@
         "platform" : "ios",
         "reference" : "systemMintColor"
       },
-      "idiom" : "universal"
+      "idiom" : "iphone"
+    },
+    {
+      "color" : {
+        "platform" : "ios",
+        "reference" : "systemMintColor"
+      },
+      "idiom" : "ipad"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "color" : {
+        "platform" : "ios",
+        "reference" : "systemMintColor"
+      },
+      "idiom" : "ipad"
+    },
+    {
+      "color" : {
+        "platform" : "ios",
+        "reference" : "systemMintColor"
+      },
+      "idiom" : "car"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "color" : {
+        "platform" : "ios",
+        "reference" : "systemMintColor"
+      },
+      "idiom" : "car"
+    },
+    {
+      "color" : {
+        "platform" : "osx",
+        "reference" : "systemMintColor"
+      },
+      "idiom" : "mac"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "color" : {
+        "platform" : "osx",
+        "reference" : "systemMintColor"
+      },
+      "idiom" : "mac"
+    },
+    {
+      "color" : {
+        "platform" : "watchos",
+        "reference" : "systemMintColor"
+      },
+      "idiom" : "watch"
+    },
+    {
+      "color" : {
+        "platform" : "tvos",
+        "reference" : "systemMintColor"
+      },
+      "idiom" : "tv"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "color" : {
+        "platform" : "tvos",
+        "reference" : "systemMintColor"
+      },
+      "idiom" : "tv"
     }
   ],
   "info" : {

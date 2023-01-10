@@ -5,7 +5,7 @@
         "platform" : "ios",
         "reference" : "tertiaryLabelColor"
       },
-      "idiom" : "universal"
+      "idiom" : "iphone"
     },
     {
       "appearances" : [
@@ -18,7 +18,94 @@
         "platform" : "ios",
         "reference" : "tertiaryLabelColor"
       },
-      "idiom" : "universal"
+      "idiom" : "iphone"
+    },
+    {
+      "color" : {
+        "platform" : "ios",
+        "reference" : "tertiaryLabelColor"
+      },
+      "idiom" : "ipad"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "color" : {
+        "platform" : "ios",
+        "reference" : "tertiaryLabelColor"
+      },
+      "idiom" : "ipad"
+    },
+    {
+      "color" : {
+        "platform" : "ios",
+        "reference" : "tertiaryLabelColor"
+      },
+      "idiom" : "car"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "color" : {
+        "platform" : "ios",
+        "reference" : "tertiaryLabelColor"
+      },
+      "idiom" : "car"
+    },
+    {
+      "color" : {
+        "platform" : "osx",
+        "reference" : "tertiaryLabelColor"
+      },
+      "idiom" : "mac"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "color" : {
+        "platform" : "osx",
+        "reference" : "tertiaryLabelColor"
+      },
+      "idiom" : "mac"
+    },
+    {
+      "color" : {
+        "platform" : "watchos",
+        "reference" : "tertiaryLabelColor"
+      },
+      "idiom" : "watch"
+    },
+    {
+      "color" : {
+        "platform" : "tvos",
+        "reference" : "tertiaryLabelColor"
+      },
+      "idiom" : "tv"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "color" : {
+        "platform" : "tvos",
+        "reference" : "tertiaryLabelColor"
+      },
+      "idiom" : "tv"
     }
   ],
   "info" : {

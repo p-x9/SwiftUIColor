@@ -10,7 +10,7 @@
           "red" : "0.000"
         }
       },
-      "idiom" : "universal"
+      "idiom" : "iphone"
     },
     {
       "appearances" : [
@@ -28,7 +28,129 @@
           "red" : "0.102"
         }
       },
-      "idiom" : "universal"
+      "idiom" : "iphone"
+    },
+    {
+      "color" : {
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "0.498",
+          "blue" : "0.957",
+          "green" : "0.404",
+          "red" : "0.000"
+        }
+      },
+      "idiom" : "ipad"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "color" : {
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "0.498",
+          "blue" : "1.000",
+          "green" : "0.663",
+          "red" : "0.102"
+        }
+      },
+      "idiom" : "ipad"
+    },
+    {
+      "color" : {
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "0.498",
+          "blue" : "0.957",
+          "green" : "0.404",
+          "red" : "0.000"
+        }
+      },
+      "idiom" : "car"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "color" : {
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "0.498",
+          "blue" : "1.000",
+          "green" : "0.663",
+          "red" : "0.102"
+        }
+      },
+      "idiom" : "car"
+    },
+    {
+      "color" : {
+        "platform" : "osx",
+        "reference" : "keyboardFocusIndicatorColor"
+      },
+      "idiom" : "mac"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "color" : {
+        "platform" : "osx",
+        "reference" : "keyboardFocusIndicatorColor"
+      },
+      "idiom" : "mac"
+    },
+    {
+      "color" : {
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "0.498",
+          "blue" : "0.957",
+          "green" : "0.404",
+          "red" : "0.000"
+        }
+      },
+      "idiom" : "watch"
+    },
+    {
+      "color" : {
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "0.498",
+          "blue" : "0.957",
+          "green" : "0.404",
+          "red" : "0.000"
+        }
+      },
+      "idiom" : "tv"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "color" : {
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "0.498",
+          "blue" : "1.000",
+          "green" : "0.663",
+          "red" : "0.102"
+        }
+      },
+      "idiom" : "tv"
     }
   ],
   "info" : {
