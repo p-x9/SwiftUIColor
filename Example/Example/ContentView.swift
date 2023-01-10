@@ -34,6 +34,15 @@ struct ContentView: View {
     var body: some View {
         TabView {
 
+            // universal
+            ColorList(
+                title: "universal",
+                colorNamePairs: Color.universal.colorNamePairs
+            )
+            .tabItem {
+                Label("universal", systemImage: "circle.grid.cross.fill")
+            }
+
             // iOS
             ColorList(
                 title: "iOS",
@@ -51,15 +60,7 @@ struct ContentView: View {
             .tabItem {
                 Label("macOS", systemImage: "macwindow")
             }
-
-            // universal
-            ColorList(
-                title: "universal",
-                colorNamePairs: Color.universal.colorNamePairs
-            )
-            .tabItem {
-                Label("universal", systemImage: "circle.grid.cross.fill")
-            }
+            
         }
     }
 }
