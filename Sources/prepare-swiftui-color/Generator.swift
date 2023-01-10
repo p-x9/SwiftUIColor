@@ -94,7 +94,7 @@ extension Generator {
         output +=
         """
         \n
-        public extension Color.\(suffix) {
+        extension Color.\(suffix) {
         \(tab)public static let colors = [\(propertyNames.joined(separator: ", "))]
         }
         """
