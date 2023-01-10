@@ -59,8 +59,11 @@ extension Generator {
             }
         
         let tab = String.tab
+
+        // header
         var output = header
-        
+
+        // color enum
         output +=
         """
         \(tab)enum \(suffix) {
@@ -80,6 +83,19 @@ extension Generator {
         output +=
         """
         \(tab)}
+        }
+        """
+
+        // color list
+        let propertyNames = colorNames.compactMap {
+            $0.components(separatedBy: "_").last
+        }
+
+        output +=
+        """
+        \n
+        public extension Color.\(suffix) {
+        \(tab)public static let colors = [\(propertyNames.joined(separator: ", "))]
         }
         """
         
