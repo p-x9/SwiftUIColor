@@ -9,46 +9,87 @@
 import SwiftUI
 import SwiftUIColor
 
+protocol ColorNamePairRepresentable {
+    static var colorNamePairs: [(name: String, color: Color)] { get }
+    static var colorNames: [String] { get }
+    static var colors: [Color] { get }
+}
+
+extension ColorNamePairRepresentable {
+    static var colorNamePairs: [(name: String, color: Color)] {
+        zip(colorNames, colors)
+            .map { $0 }
+            .sorted { lhs, rhs in
+                lhs.name < rhs.name
+            }
+    }
+}
+
+extension Color.iOS: ColorNamePairRepresentable {}
+extension Color.macOS: ColorNamePairRepresentable {}
+extension Color.universal: ColorNamePairRepresentable {}
+
+
 struct ContentView: View {
     var body: some View {
         TabView {
 
             // iOS
-            NavigationView {
-                List {
-                    ForEach(Color.iOS.colors.indices, id: \.self) { index in
-                        HStack {
-                            Text(Color.iOS.colorNames[index])
-                            Spacer()
-                            Color.iOS.colors[index]
-                                .frame(width: 140)
-                        }
-                    }
-                }
-                .navigationTitle("iOS")
-            }
+            ColorList(
+                title: "iOS",
+                colorNamePairs: Color.iOS.colorNamePairs
+            )
             .tabItem {
                 Label("iOS", systemImage: "ipodshuffle.gen3")
             }
 
-
             // macOS
-            NavigationView {
-                List {
-                    ForEach(Color.macOS.colors.indices, id: \.self) { index in
-                        HStack {
-                            Text(Color.macOS.colorNames[index])
-                            Spacer()
-                            Color.macOS.colors[index]
-                                .frame(width: 140)
-                        }
-                    }
-                }
-                .navigationTitle("macOS")
-            }
+            ColorList(
+                title: "macOS",
+                colorNamePairs: Color.macOS.colorNamePairs
+            )
             .tabItem {
                 Label("macOS", systemImage: "macwindow")
             }
+
+            // universal
+            ColorList(
+                title: "universal",
+                colorNamePairs: Color.universal.colorNamePairs
+            )
+            .tabItem {
+                Label("universal", systemImage: "circle.grid.cross.fill")
+            }
+        }
+    }
+}
+
+
+struct ColorList: View {
+    let title: String
+    let colorNamePairs: [(name: String, color: Color)]
+
+    var colors: [Color] {
+        colorNamePairs.map(\.color)
+    }
+
+    var colorNames: [String] {
+        colorNamePairs.map(\.name)
+    }
+
+    var body: some View {
+        NavigationView {
+            List {
+                ForEach(colors.indices, id: \.self) { index in
+                    HStack {
+                        Text(colorNames[index])
+                        Spacer()
+                        colors[index]
+                            .frame(width: 140)
+                    }
+                }
+            }
+            .navigationTitle(title)
         }
     }
 }
