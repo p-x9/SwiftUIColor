@@ -47,6 +47,8 @@ let package = Package(
             url: "https://github.com/p-x9/SwiftUIColor/releases/download/0.0.4/prepare-swiftui-color-bin.artifactbundle.zip",
             checksum: "347d78d2f878c3e363b4ab5703df9b05e57a239c5b803016a825692c5d8751b5"
         ),
+//        DUBUG
+//        .binaryTarget(name: "prepare-swiftui-color-bin", path: "./prepare-swiftui-color-bin.artifactbundle.zip"),
         .testTarget(
             name: "SwiftUIColorTests",
             dependencies: ["SwiftUIColor"]
