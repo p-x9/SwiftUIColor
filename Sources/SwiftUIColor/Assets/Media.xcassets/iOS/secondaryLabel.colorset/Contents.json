@@ -2,6 +2,36 @@
   "colors" : [
     {
       "color" : {
+        "color-space" : "extended-srgb",
+        "components" : {
+          "alpha" : "0.600",
+          "blue" : "0.263",
+          "green" : "0.235",
+          "red" : "0.235"
+        }
+      },
+      "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "color" : {
+        "color-space" : "extended-srgb",
+        "components" : {
+          "alpha" : "0.600",
+          "blue" : "0.961",
+          "green" : "0.922",
+          "red" : "0.922"
+        }
+      },
+      "idiom" : "universal"
+    },
+    {
+      "color" : {
         "platform" : "ios",
         "reference" : "secondaryLabelColor"
       },
@@ -19,93 +49,6 @@
         "reference" : "secondaryLabelColor"
       },
       "idiom" : "iphone"
-    },
-    {
-      "color" : {
-        "platform" : "ios",
-        "reference" : "secondaryLabelColor"
-      },
-      "idiom" : "ipad"
-    },
-    {
-      "appearances" : [
-        {
-          "appearance" : "luminosity",
-          "value" : "dark"
-        }
-      ],
-      "color" : {
-        "platform" : "ios",
-        "reference" : "secondaryLabelColor"
-      },
-      "idiom" : "ipad"
-    },
-    {
-      "color" : {
-        "platform" : "ios",
-        "reference" : "secondaryLabelColor"
-      },
-      "idiom" : "car"
-    },
-    {
-      "appearances" : [
-        {
-          "appearance" : "luminosity",
-          "value" : "dark"
-        }
-      ],
-      "color" : {
-        "platform" : "ios",
-        "reference" : "secondaryLabelColor"
-      },
-      "idiom" : "car"
-    },
-    {
-      "color" : {
-        "platform" : "osx",
-        "reference" : "secondaryLabelColor"
-      },
-      "idiom" : "mac"
-    },
-    {
-      "appearances" : [
-        {
-          "appearance" : "luminosity",
-          "value" : "dark"
-        }
-      ],
-      "color" : {
-        "platform" : "osx",
-        "reference" : "secondaryLabelColor"
-      },
-      "idiom" : "mac"
-    },
-    {
-      "color" : {
-        "platform" : "watchos",
-        "reference" : "secondaryLabelColor"
-      },
-      "idiom" : "watch"
-    },
-    {
-      "color" : {
-        "platform" : "tvos",
-        "reference" : "secondaryLabelColor"
-      },
-      "idiom" : "tv"
-    },
-    {
-      "appearances" : [
-        {
-          "appearance" : "luminosity",
-          "value" : "dark"
-        }
-      ],
-      "color" : {
-        "platform" : "tvos",
-        "reference" : "secondaryLabelColor"
-      },
-      "idiom" : "tv"
     }
   ],
   "info" : {

@@ -2,10 +2,15 @@
   "colors" : [
     {
       "color" : {
-        "platform" : "ios",
-        "reference" : "systemYellowColor"
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0.000",
+          "green" : "0.800",
+          "red" : "1.000"
+        }
       },
-      "idiom" : "iphone"
+      "idiom" : "universal"
     },
     {
       "appearances" : [
@@ -15,50 +20,15 @@
         }
       ],
       "color" : {
-        "platform" : "ios",
-        "reference" : "systemYellowColor"
-      },
-      "idiom" : "iphone"
-    },
-    {
-      "color" : {
-        "platform" : "ios",
-        "reference" : "systemYellowColor"
-      },
-      "idiom" : "ipad"
-    },
-    {
-      "appearances" : [
-        {
-          "appearance" : "luminosity",
-          "value" : "dark"
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0.039",
+          "green" : "0.839",
+          "red" : "1.000"
         }
-      ],
-      "color" : {
-        "platform" : "ios",
-        "reference" : "systemYellowColor"
       },
-      "idiom" : "ipad"
-    },
-    {
-      "color" : {
-        "platform" : "ios",
-        "reference" : "systemYellowColor"
-      },
-      "idiom" : "car"
-    },
-    {
-      "appearances" : [
-        {
-          "appearance" : "luminosity",
-          "value" : "dark"
-        }
-      ],
-      "color" : {
-        "platform" : "ios",
-        "reference" : "systemYellowColor"
-      },
-      "idiom" : "car"
+      "idiom" : "universal"
     },
     {
       "color" : {
@@ -79,33 +49,6 @@
         "reference" : "systemYellowColor"
       },
       "idiom" : "mac"
-    },
-    {
-      "color" : {
-        "platform" : "watchos",
-        "reference" : "systemYellowColor"
-      },
-      "idiom" : "watch"
-    },
-    {
-      "color" : {
-        "platform" : "tvos",
-        "reference" : "systemYellowColor"
-      },
-      "idiom" : "tv"
-    },
-    {
-      "appearances" : [
-        {
-          "appearance" : "luminosity",
-          "value" : "dark"
-        }
-      ],
-      "color" : {
-        "platform" : "tvos",
-        "reference" : "systemYellowColor"
-      },
-      "idiom" : "tv"
     }
   ],
   "info" : {

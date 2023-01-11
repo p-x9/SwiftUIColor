@@ -2,6 +2,34 @@
   "colors" : [
     {
       "color" : {
+        "color-space" : "extended-srgb",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0.969",
+          "green" : "0.949",
+          "red" : "0.949"
+        }
+      },
+      "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "color" : {
+        "color-space" : "extended-gray",
+        "components" : {
+          "alpha" : "1.000",
+          "white" : "0.000"
+        }
+      },
+      "idiom" : "universal"
+    },
+    {
+      "color" : {
         "platform" : "ios",
         "reference" : "systemGroupedBackgroundColor"
       },
@@ -19,114 +47,6 @@
         "reference" : "systemGroupedBackgroundColor"
       },
       "idiom" : "iphone"
-    },
-    {
-      "color" : {
-        "platform" : "ios",
-        "reference" : "systemGroupedBackgroundColor"
-      },
-      "idiom" : "ipad"
-    },
-    {
-      "appearances" : [
-        {
-          "appearance" : "luminosity",
-          "value" : "dark"
-        }
-      ],
-      "color" : {
-        "platform" : "ios",
-        "reference" : "systemGroupedBackgroundColor"
-      },
-      "idiom" : "ipad"
-    },
-    {
-      "color" : {
-        "platform" : "ios",
-        "reference" : "systemGroupedBackgroundColor"
-      },
-      "idiom" : "car"
-    },
-    {
-      "appearances" : [
-        {
-          "appearance" : "luminosity",
-          "value" : "dark"
-        }
-      ],
-      "color" : {
-        "platform" : "ios",
-        "reference" : "systemGroupedBackgroundColor"
-      },
-      "idiom" : "car"
-    },
-    {
-      "color" : {
-        "color-space" : "extended-srgb",
-        "components" : {
-          "alpha" : "1.000",
-          "blue" : "0.969",
-          "green" : "0.949",
-          "red" : "0.949"
-        }
-      },
-      "idiom" : "mac"
-    },
-    {
-      "appearances" : [
-        {
-          "appearance" : "luminosity",
-          "value" : "dark"
-        }
-      ],
-      "color" : {
-        "color-space" : "extended-gray",
-        "components" : {
-          "alpha" : "1.000",
-          "white" : "0.000"
-        }
-      },
-      "idiom" : "mac"
-    },
-    {
-      "color" : {
-        "color-space" : "extended-srgb",
-        "components" : {
-          "alpha" : "1.000",
-          "blue" : "0.969",
-          "green" : "0.949",
-          "red" : "0.949"
-        }
-      },
-      "idiom" : "watch"
-    },
-    {
-      "color" : {
-        "color-space" : "extended-srgb",
-        "components" : {
-          "alpha" : "1.000",
-          "blue" : "0.969",
-          "green" : "0.949",
-          "red" : "0.949"
-        }
-      },
-      "idiom" : "tv"
-    },
-    {
-      "appearances" : [
-        {
-          "appearance" : "luminosity",
-          "value" : "dark"
-        }
-      ],
-      "color" : {
-        "color-space" : "extended-gray",
-        "components" : {
-          "alpha" : "1.000",
-          "white" : "0.000"
-        }
-      },
-      "idiom" : "tv"
     }
   ],
   "info" : {

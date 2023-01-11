@@ -2,102 +2,15 @@
   "colors" : [
     {
       "color" : {
-        "platform" : "ios",
-        "reference" : "separatorColor"
-      },
-      "idiom" : "iphone"
-    },
-    {
-      "appearances" : [
-        {
-          "appearance" : "luminosity",
-          "value" : "dark"
-        }
-      ],
-      "color" : {
-        "platform" : "ios",
-        "reference" : "separatorColor"
-      },
-      "idiom" : "iphone"
-    },
-    {
-      "color" : {
-        "platform" : "ios",
-        "reference" : "separatorColor"
-      },
-      "idiom" : "ipad"
-    },
-    {
-      "appearances" : [
-        {
-          "appearance" : "luminosity",
-          "value" : "dark"
-        }
-      ],
-      "color" : {
-        "platform" : "ios",
-        "reference" : "separatorColor"
-      },
-      "idiom" : "ipad"
-    },
-    {
-      "color" : {
-        "platform" : "ios",
-        "reference" : "separatorColor"
-      },
-      "idiom" : "car"
-    },
-    {
-      "appearances" : [
-        {
-          "appearance" : "luminosity",
-          "value" : "dark"
-        }
-      ],
-      "color" : {
-        "platform" : "ios",
-        "reference" : "separatorColor"
-      },
-      "idiom" : "car"
-    },
-    {
-      "color" : {
-        "platform" : "osx",
-        "reference" : "separatorColor"
-      },
-      "idiom" : "mac"
-    },
-    {
-      "appearances" : [
-        {
-          "appearance" : "luminosity",
-          "value" : "dark"
-        }
-      ],
-      "color" : {
-        "platform" : "osx",
-        "reference" : "separatorColor"
-      },
-      "idiom" : "mac"
-    },
-    {
-      "color" : {
-        "color-space" : "extended-srgb",
+        "color-space" : "srgb",
         "components" : {
-          "alpha" : "0.290",
-          "blue" : "0.263",
-          "green" : "0.235",
-          "red" : "0.235"
+          "alpha" : "0.098",
+          "blue" : "0.000",
+          "green" : "0.000",
+          "red" : "0.000"
         }
       },
-      "idiom" : "watch"
-    },
-    {
-      "color" : {
-        "platform" : "tvos",
-        "reference" : "separatorColor"
-      },
-      "idiom" : "tv"
+      "idiom" : "universal"
     },
     {
       "appearances" : [
@@ -107,10 +20,35 @@
         }
       ],
       "color" : {
-        "platform" : "tvos",
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "0.098",
+          "blue" : "1.000",
+          "green" : "1.000",
+          "red" : "1.000"
+        }
+      },
+      "idiom" : "universal"
+    },
+    {
+      "color" : {
+        "platform" : "osx",
         "reference" : "separatorColor"
       },
-      "idiom" : "tv"
+      "idiom" : "mac"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "color" : {
+        "platform" : "osx",
+        "reference" : "separatorColor"
+      },
+      "idiom" : "mac"
     }
   ],
   "info" : {
