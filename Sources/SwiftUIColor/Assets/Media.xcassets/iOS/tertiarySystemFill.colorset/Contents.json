@@ -2,75 +2,15 @@
   "colors" : [
     {
       "color" : {
-        "platform" : "ios",
-        "reference" : "tertiarySystemFillColor"
-      },
-      "idiom" : "iphone"
-    },
-    {
-      "appearances" : [
-        {
-          "appearance" : "luminosity",
-          "value" : "dark"
-        }
-      ],
-      "color" : {
-        "platform" : "ios",
-        "reference" : "tertiarySystemFillColor"
-      },
-      "idiom" : "iphone"
-    },
-    {
-      "color" : {
-        "platform" : "ios",
-        "reference" : "tertiarySystemFillColor"
-      },
-      "idiom" : "ipad"
-    },
-    {
-      "appearances" : [
-        {
-          "appearance" : "luminosity",
-          "value" : "dark"
-        }
-      ],
-      "color" : {
-        "platform" : "ios",
-        "reference" : "tertiarySystemFillColor"
-      },
-      "idiom" : "ipad"
-    },
-    {
-      "color" : {
-        "platform" : "ios",
-        "reference" : "tertiarySystemFillColor"
-      },
-      "idiom" : "car"
-    },
-    {
-      "appearances" : [
-        {
-          "appearance" : "luminosity",
-          "value" : "dark"
-        }
-      ],
-      "color" : {
-        "platform" : "ios",
-        "reference" : "tertiarySystemFillColor"
-      },
-      "idiom" : "car"
-    },
-    {
-      "color" : {
         "color-space" : "extended-srgb",
         "components" : {
-          "alpha" : "0.120",
+          "alpha" : "0.119",
           "blue" : "0.502",
           "green" : "0.463",
           "red" : "0.463"
         }
       },
-      "idiom" : "mac"
+      "idiom" : "universal"
     },
     {
       "appearances" : [
@@ -88,31 +28,14 @@
           "red" : "0.463"
         }
       },
-      "idiom" : "mac"
+      "idiom" : "universal"
     },
     {
       "color" : {
-        "color-space" : "extended-srgb",
-        "components" : {
-          "alpha" : "0.120",
-          "blue" : "0.502",
-          "green" : "0.463",
-          "red" : "0.463"
-        }
+        "platform" : "ios",
+        "reference" : "tertiarySystemFillColor"
       },
-      "idiom" : "watch"
-    },
-    {
-      "color" : {
-        "color-space" : "extended-srgb",
-        "components" : {
-          "alpha" : "0.120",
-          "blue" : "0.502",
-          "green" : "0.463",
-          "red" : "0.463"
-        }
-      },
-      "idiom" : "tv"
+      "idiom" : "iphone"
     },
     {
       "appearances" : [
@@ -122,15 +45,10 @@
         }
       ],
       "color" : {
-        "color-space" : "extended-srgb",
-        "components" : {
-          "alpha" : "0.240",
-          "blue" : "0.502",
-          "green" : "0.463",
-          "red" : "0.463"
-        }
+        "platform" : "ios",
+        "reference" : "tertiarySystemFillColor"
       },
-      "idiom" : "tv"
+      "idiom" : "iphone"
     }
   ],
   "info" : {

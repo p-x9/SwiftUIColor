@@ -10,7 +10,7 @@
           "red" : "0.588"
         }
       },
-      "idiom" : "iphone"
+      "idiom" : "universal"
     },
     {
       "appearances" : [
@@ -28,67 +28,7 @@
           "red" : "0.157"
         }
       },
-      "idiom" : "iphone"
-    },
-    {
-      "color" : {
-        "color-space" : "srgb",
-        "components" : {
-          "alpha" : "0.898",
-          "blue" : "0.588",
-          "green" : "0.588",
-          "red" : "0.588"
-        }
-      },
-      "idiom" : "ipad"
-    },
-    {
-      "appearances" : [
-        {
-          "appearance" : "luminosity",
-          "value" : "dark"
-        }
-      ],
-      "color" : {
-        "color-space" : "srgb",
-        "components" : {
-          "alpha" : "1.000",
-          "blue" : "0.157",
-          "green" : "0.157",
-          "red" : "0.157"
-        }
-      },
-      "idiom" : "ipad"
-    },
-    {
-      "color" : {
-        "color-space" : "srgb",
-        "components" : {
-          "alpha" : "0.898",
-          "blue" : "0.588",
-          "green" : "0.588",
-          "red" : "0.588"
-        }
-      },
-      "idiom" : "car"
-    },
-    {
-      "appearances" : [
-        {
-          "appearance" : "luminosity",
-          "value" : "dark"
-        }
-      ],
-      "color" : {
-        "color-space" : "srgb",
-        "components" : {
-          "alpha" : "1.000",
-          "blue" : "0.157",
-          "green" : "0.157",
-          "red" : "0.157"
-        }
-      },
-      "idiom" : "car"
+      "idiom" : "universal"
     },
     {
       "color" : {
@@ -109,48 +49,6 @@
         "reference" : "underPageBackgroundColor"
       },
       "idiom" : "mac"
-    },
-    {
-      "color" : {
-        "color-space" : "srgb",
-        "components" : {
-          "alpha" : "0.898",
-          "blue" : "0.588",
-          "green" : "0.588",
-          "red" : "0.588"
-        }
-      },
-      "idiom" : "watch"
-    },
-    {
-      "color" : {
-        "color-space" : "srgb",
-        "components" : {
-          "alpha" : "0.898",
-          "blue" : "0.588",
-          "green" : "0.588",
-          "red" : "0.588"
-        }
-      },
-      "idiom" : "tv"
-    },
-    {
-      "appearances" : [
-        {
-          "appearance" : "luminosity",
-          "value" : "dark"
-        }
-      ],
-      "color" : {
-        "color-space" : "srgb",
-        "components" : {
-          "alpha" : "1.000",
-          "blue" : "0.157",
-          "green" : "0.157",
-          "red" : "0.157"
-        }
-      },
-      "idiom" : "tv"
     }
   ],
   "info" : {

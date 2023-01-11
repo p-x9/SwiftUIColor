@@ -1,0 +1,27 @@
+{
+  "colors" : [
+    {
+      "color" : {
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "0.300",
+          "blue" : "0.961",
+          "green" : "0.922",
+          "red" : "0.922"
+        }
+      },
+      "idiom" : "universal"
+    },
+    {
+      "color" : {
+        "platform" : "watchos",
+        "reference" : "tertiaryLabelColor"
+      },
+      "idiom" : "watch"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

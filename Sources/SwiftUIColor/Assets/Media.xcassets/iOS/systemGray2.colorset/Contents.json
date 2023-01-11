@@ -2,66 +2,6 @@
   "colors" : [
     {
       "color" : {
-        "platform" : "ios",
-        "reference" : "systemGray2Color"
-      },
-      "idiom" : "iphone"
-    },
-    {
-      "appearances" : [
-        {
-          "appearance" : "luminosity",
-          "value" : "dark"
-        }
-      ],
-      "color" : {
-        "platform" : "ios",
-        "reference" : "systemGray2Color"
-      },
-      "idiom" : "iphone"
-    },
-    {
-      "color" : {
-        "platform" : "ios",
-        "reference" : "systemGray2Color"
-      },
-      "idiom" : "ipad"
-    },
-    {
-      "appearances" : [
-        {
-          "appearance" : "luminosity",
-          "value" : "dark"
-        }
-      ],
-      "color" : {
-        "platform" : "ios",
-        "reference" : "systemGray2Color"
-      },
-      "idiom" : "ipad"
-    },
-    {
-      "color" : {
-        "platform" : "ios",
-        "reference" : "systemGray2Color"
-      },
-      "idiom" : "car"
-    },
-    {
-      "appearances" : [
-        {
-          "appearance" : "luminosity",
-          "value" : "dark"
-        }
-      ],
-      "color" : {
-        "platform" : "ios",
-        "reference" : "systemGray2Color"
-      },
-      "idiom" : "car"
-    },
-    {
-      "color" : {
         "color-space" : "extended-srgb",
         "components" : {
           "alpha" : "1.000",
@@ -70,7 +10,7 @@
           "red" : "0.682"
         }
       },
-      "idiom" : "mac"
+      "idiom" : "universal"
     },
     {
       "appearances" : [
@@ -88,31 +28,14 @@
           "red" : "0.388"
         }
       },
-      "idiom" : "mac"
+      "idiom" : "universal"
     },
     {
       "color" : {
-        "color-space" : "extended-srgb",
-        "components" : {
-          "alpha" : "1.000",
-          "blue" : "0.698",
-          "green" : "0.682",
-          "red" : "0.682"
-        }
+        "platform" : "ios",
+        "reference" : "systemGray2Color"
       },
-      "idiom" : "watch"
-    },
-    {
-      "color" : {
-        "color-space" : "extended-srgb",
-        "components" : {
-          "alpha" : "1.000",
-          "blue" : "0.698",
-          "green" : "0.682",
-          "red" : "0.682"
-        }
-      },
-      "idiom" : "tv"
+      "idiom" : "iphone"
     },
     {
       "appearances" : [
@@ -122,15 +45,10 @@
         }
       ],
       "color" : {
-        "color-space" : "extended-srgb",
-        "components" : {
-          "alpha" : "1.000",
-          "blue" : "0.400",
-          "green" : "0.388",
-          "red" : "0.388"
-        }
+        "platform" : "ios",
+        "reference" : "systemGray2Color"
       },
-      "idiom" : "tv"
+      "idiom" : "iphone"
     }
   ],
   "info" : {

@@ -27,6 +27,8 @@ extension ColorNamePairRepresentable {
 
 extension Color.iOS: ColorNamePairRepresentable {}
 extension Color.macOS: ColorNamePairRepresentable {}
+extension Color.tvOS: ColorNamePairRepresentable {}
+extension Color.watchOS: ColorNamePairRepresentable {}
 extension Color.universal: ColorNamePairRepresentable {}
 
 
@@ -59,6 +61,24 @@ struct ContentView: View {
             )
             .tabItem {
                 Label("macOS", systemImage: "macwindow")
+            }
+
+            // tvOS
+            ColorList(
+                title: "tvOS",
+                colorNamePairs: Color.tvOS.colorNamePairs
+            )
+            .tabItem {
+                Label("tvOS", systemImage: "appletv")
+            }
+
+            // watchOS
+            ColorList(
+                title: "watchOS",
+                colorNamePairs: Color.watchOS.colorNamePairs
+            )
+            .tabItem {
+                Label("watchOS", systemImage: "applewatch.watchface")
             }
 
         }
