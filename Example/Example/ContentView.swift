@@ -105,8 +105,16 @@ struct ColorList: View {
                     HStack {
                         Text(colorNames[index])
                         Spacer()
-                        colors[index]
-                            .frame(width: 140)
+                        ZStack {
+                            colors[index]
+                                .clipShape(RightTriangle(rightAngle: .topLeft))
+                                .colorScheme(.light)
+                            colors[index]
+                                .clipShape(RightTriangle(rightAngle: .bottomRight))
+                                .colorScheme(.dark)
+                        }
+                        .frame(width: 140)
+                        .border(Color.iOS.separator)
                     }
                 }
             }
