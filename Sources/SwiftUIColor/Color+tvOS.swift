@@ -33,6 +33,5 @@ public extension Color {
 extension Color.tvOS {
     public static let colors = [tertiaryLabel, systemRed, systemPurple, systemIndigo, systemGreen, systemPink, placeholderText, link, systemGray, secondaryLabel, systemOrange, separator, quaternaryLabel, systemBlue, tint, systemCyan, systemYellow, systemBrown, opaqueSeparator, label, systemMint, systemTeal]
 
-
     public static let colorNames = ["tertiaryLabel", "systemRed", "systemPurple", "systemIndigo", "systemGreen", "systemPink", "placeholderText", "link", "systemGray", "secondaryLabel", "systemOrange", "separator", "quaternaryLabel", "systemBlue", "tint", "systemCyan", "systemYellow", "systemBrown", "opaqueSeparator", "label", "systemMint", "systemTeal"]
 }

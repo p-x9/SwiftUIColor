@@ -28,6 +28,5 @@ public extension Color {
 extension Color.watchOS {
     public static let colors = [tertiaryLabel, systemRed, systemPurple, systemIndigo, systemGreen, systemPink, systemGray, secondaryLabel, systemOrange, quaternaryLabel, systemBlue, systemCyan, systemYellow, systemBrown, label, systemMint, systemTeal]
 
-
     public static let colorNames = ["tertiaryLabel", "systemRed", "systemPurple", "systemIndigo", "systemGreen", "systemPink", "systemGray", "secondaryLabel", "systemOrange", "quaternaryLabel", "systemBlue", "systemCyan", "systemYellow", "systemBrown", "label", "systemMint", "systemTeal"]
 }

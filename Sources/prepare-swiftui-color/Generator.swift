@@ -96,9 +96,10 @@ extension Generator {
         \n
         extension Color.\(suffix) {
         \(tab)public static let colors = [\(propertyNames.joined(separator: ", "))]
-        \n
+
         \(tab)public static let colorNames = [\(propertyNames.map({ "\"\($0)\"" }).joined(separator: ", "))]
         }
+        
         """
         
         let outputURL = self.outputURL.appendingPathComponent("Color+\(suffix).swift")
