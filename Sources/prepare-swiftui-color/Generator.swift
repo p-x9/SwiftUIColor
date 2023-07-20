@@ -101,7 +101,7 @@ extension Generator {
         }
         """
         
-        let outputURL = self.outputURL.appendingPathComponent("Color+\(suffix).generated.swift")
+        let outputURL = self.outputURL.appendingPathComponent("Color+\(suffix).swift")
         if fileManger.fileExists(atPath: outputURL.path) {
             try? fileManger.removeItem(at: outputURL)
         }
