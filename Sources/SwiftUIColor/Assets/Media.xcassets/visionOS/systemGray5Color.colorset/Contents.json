@@ -2,13 +2,6 @@
   "colors" : [
     {
       "color" : {
-        "platform" : "XR",
-        "reference" : "systemGray5Color"
-      },
-      "idiom" : "universal"
-    },
-    {
-      "color" : {
         "color-space" : "extended-srgb",
         "components" : {
           "alpha" : "1.000",
@@ -16,6 +9,13 @@
           "green" : "0xE4",
           "red" : "0xE4"
         }
+      },
+      "idiom" : "universal"
+    },
+    {
+      "color" : {
+        "platform" : "XR",
+        "reference" : "systemGray5Color"
       },
       "idiom" : "reality"
     }
