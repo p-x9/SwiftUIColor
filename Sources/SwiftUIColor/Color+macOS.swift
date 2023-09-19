@@ -4,57 +4,167 @@
 import SwiftUI
 
 public extension Color {
-    enum macOS {
-        public static let controlAccentColor = Color("macOS/controlAccentColor", bundle: .myModule)
-        public static let keyboardFocusIndicatorColor = Color("macOS/keyboardFocusIndicatorColor", bundle: .myModule)
-        public static let systemRed = Color("macOS/systemRed", bundle: .myModule)
-        public static let systemPurple = Color("macOS/systemPurple", bundle: .myModule)
-        public static let alternateSelectedControlColor = Color("macOS/alternateSelectedControlColor", bundle: .myModule)
-        public static let controlColor = Color("macOS/controlColor", bundle: .myModule)
-        public static let selectedControlColor = Color("macOS/selectedControlColor", bundle: .myModule)
-        public static let alternateSelectedControlTextColor = Color("macOS/alternateSelectedControlTextColor", bundle: .myModule)
-        public static let systemIndigo = Color("macOS/systemIndigo", bundle: .myModule)
-        public static let systemGreen = Color("macOS/systemGreen", bundle: .myModule)
-        public static let textBackgroundColor = Color("macOS/textBackgroundColor", bundle: .myModule)
-        public static let labelColor = Color("macOS/labelColor", bundle: .myModule)
-        public static let systemPink = Color("macOS/systemPink", bundle: .myModule)
-        public static let linkColor = Color("macOS/linkColor", bundle: .myModule)
-        public static let unemphasizedSelectedTextColor = Color("macOS/unemphasizedSelectedTextColor", bundle: .myModule)
-        public static let windowFrameTextColor = Color("macOS/windowFrameTextColor", bundle: .myModule)
-        public static let controlTextColor = Color("macOS/controlTextColor", bundle: .myModule)
-        public static let systemGray = Color("macOS/systemGray", bundle: .myModule)
-        public static let tertiaryLabelColor = Color("macOS/tertiaryLabelColor", bundle: .myModule)
-        public static let systemOrange = Color("macOS/systemOrange", bundle: .myModule)
-        public static let controlBackgroundColor = Color("macOS/controlBackgroundColor", bundle: .myModule)
-        public static let unemphasizedSelectedTextBackgroundColor = Color("macOS/unemphasizedSelectedTextBackgroundColor", bundle: .myModule)
-        public static let selectedTextBackgroundColor = Color("macOS/selectedTextBackgroundColor", bundle: .myModule)
-        public static let systemBlue = Color("macOS/systemBlue", bundle: .myModule)
-        public static let underPageBackgroundColor = Color("macOS/underPageBackgroundColor", bundle: .myModule)
-        public static let secondaryLabelColor = Color("macOS/secondaryLabelColor", bundle: .myModule)
-        public static let windowBackgroundColor = Color("macOS/windowBackgroundColor", bundle: .myModule)
-        public static let gridColor = Color("macOS/gridColor", bundle: .myModule)
-        public static let headerTextColor = Color("macOS/headerTextColor", bundle: .myModule)
-        public static let selectedControlTextColor = Color("macOS/selectedControlTextColor", bundle: .myModule)
-        public static let systemCyan = Color("macOS/systemCyan", bundle: .myModule)
-        public static let findHighlightColor = Color("macOS/findHighlightColor", bundle: .myModule)
-        public static let systemYellow = Color("macOS/systemYellow", bundle: .myModule)
-        public static let systemBrown = Color("macOS/systemBrown", bundle: .myModule)
-        public static let unemphasizedSelectedContentBackgroundColor = Color("macOS/unemphasizedSelectedContentBackgroundColor", bundle: .myModule)
-        public static let selectedTextColor = Color("macOS/selectedTextColor", bundle: .myModule)
-        public static let disabledControlTextColor = Color("macOS/disabledControlTextColor", bundle: .myModule)
-        public static let systemMint = Color("macOS/systemMint", bundle: .myModule)
-        public static let selectedMenuItemTextColor = Color("macOS/selectedMenuItemTextColor", bundle: .myModule)
-        public static let quaternaryLabelColor = Color("macOS/quaternaryLabelColor", bundle: .myModule)
-        public static let systemTeal = Color("macOS/systemTeal", bundle: .myModule)
-        public static let placeholderTextColor = Color("macOS/placeholderTextColor", bundle: .myModule)
-        public static let textColor = Color("macOS/textColor", bundle: .myModule)
-        public static let separatorColor = Color("macOS/separatorColor", bundle: .myModule)
-        public static let selectedContentBackgroundColor = Color("macOS/selectedContentBackgroundColor", bundle: .myModule)
+    enum macOSConstant: String, CaseIterable {
+        case controlAccentColor
+        case keyboardFocusIndicatorColor
+        case systemRed
+        case systemPurple
+        case alternateSelectedControlColor
+        case controlColor
+        case selectedControlColor
+        case alternateSelectedControlTextColor
+        case systemIndigo
+        case systemGreen
+        case textBackgroundColor
+        case labelColor
+        case systemPink
+        case linkColor
+        case unemphasizedSelectedTextColor
+        case windowFrameTextColor
+        case controlTextColor
+        case systemGray
+        case tertiaryLabelColor
+        case systemOrange
+        case controlBackgroundColor
+        case unemphasizedSelectedTextBackgroundColor
+        case selectedTextBackgroundColor
+        case systemBlue
+        case underPageBackgroundColor
+        case secondaryLabelColor
+        case windowBackgroundColor
+        case gridColor
+        case headerTextColor
+        case selectedControlTextColor
+        case systemCyan
+        case findHighlightColor
+        case systemYellow
+        case systemBrown
+        case unemphasizedSelectedContentBackgroundColor
+        case selectedTextColor
+        case disabledControlTextColor
+        case systemMint
+        case selectedMenuItemTextColor
+        case quaternaryLabelColor
+        case systemTeal
+        case placeholderTextColor
+        case textColor
+        case separatorColor
+        case selectedContentBackgroundColor
+
+        var name: String { rawValue }
     }
 }
 
-extension Color.macOS {
-    public static let colors = [controlAccentColor, keyboardFocusIndicatorColor, systemRed, systemPurple, alternateSelectedControlColor, controlColor, selectedControlColor, alternateSelectedControlTextColor, systemIndigo, systemGreen, textBackgroundColor, labelColor, systemPink, linkColor, unemphasizedSelectedTextColor, windowFrameTextColor, controlTextColor, systemGray, tertiaryLabelColor, systemOrange, controlBackgroundColor, unemphasizedSelectedTextBackgroundColor, selectedTextBackgroundColor, systemBlue, underPageBackgroundColor, secondaryLabelColor, windowBackgroundColor, gridColor, headerTextColor, selectedControlTextColor, systemCyan, findHighlightColor, systemYellow, systemBrown, unemphasizedSelectedContentBackgroundColor, selectedTextColor, disabledControlTextColor, systemMint, selectedMenuItemTextColor, quaternaryLabelColor, systemTeal, placeholderTextColor, textColor, separatorColor, selectedContentBackgroundColor]
+public extension Color {
+    struct MacOS {
+        public let controlAccentColor = Color("macOS/controlAccentColor", bundle: .myModule)
 
-    public static let colorNames = ["controlAccentColor", "keyboardFocusIndicatorColor", "systemRed", "systemPurple", "alternateSelectedControlColor", "controlColor", "selectedControlColor", "alternateSelectedControlTextColor", "systemIndigo", "systemGreen", "textBackgroundColor", "labelColor", "systemPink", "linkColor", "unemphasizedSelectedTextColor", "windowFrameTextColor", "controlTextColor", "systemGray", "tertiaryLabelColor", "systemOrange", "controlBackgroundColor", "unemphasizedSelectedTextBackgroundColor", "selectedTextBackgroundColor", "systemBlue", "underPageBackgroundColor", "secondaryLabelColor", "windowBackgroundColor", "gridColor", "headerTextColor", "selectedControlTextColor", "systemCyan", "findHighlightColor", "systemYellow", "systemBrown", "unemphasizedSelectedContentBackgroundColor", "selectedTextColor", "disabledControlTextColor", "systemMint", "selectedMenuItemTextColor", "quaternaryLabelColor", "systemTeal", "placeholderTextColor", "textColor", "separatorColor", "selectedContentBackgroundColor"]
+        public let keyboardFocusIndicatorColor = Color("macOS/keyboardFocusIndicatorColor", bundle: .myModule)
+
+        public let systemRed = Color("macOS/systemRed", bundle: .myModule)
+
+        public let systemPurple = Color("macOS/systemPurple", bundle: .myModule)
+
+        public let alternateSelectedControlColor = Color("macOS/alternateSelectedControlColor", bundle: .myModule)
+
+        public let controlColor = Color("macOS/controlColor", bundle: .myModule)
+
+        public let selectedControlColor = Color("macOS/selectedControlColor", bundle: .myModule)
+
+        public let alternateSelectedControlTextColor = Color("macOS/alternateSelectedControlTextColor", bundle: .myModule)
+
+        public let systemIndigo = Color("macOS/systemIndigo", bundle: .myModule)
+
+        public let systemGreen = Color("macOS/systemGreen", bundle: .myModule)
+
+        public let textBackgroundColor = Color("macOS/textBackgroundColor", bundle: .myModule)
+
+        public let labelColor = Color("macOS/labelColor", bundle: .myModule)
+
+        public let systemPink = Color("macOS/systemPink", bundle: .myModule)
+
+        public let linkColor = Color("macOS/linkColor", bundle: .myModule)
+
+        public let unemphasizedSelectedTextColor = Color("macOS/unemphasizedSelectedTextColor", bundle: .myModule)
+
+        public let windowFrameTextColor = Color("macOS/windowFrameTextColor", bundle: .myModule)
+
+        public let controlTextColor = Color("macOS/controlTextColor", bundle: .myModule)
+
+        public let systemGray = Color("macOS/systemGray", bundle: .myModule)
+
+        public let tertiaryLabelColor = Color("macOS/tertiaryLabelColor", bundle: .myModule)
+
+        public let systemOrange = Color("macOS/systemOrange", bundle: .myModule)
+
+        public let controlBackgroundColor = Color("macOS/controlBackgroundColor", bundle: .myModule)
+
+        public let unemphasizedSelectedTextBackgroundColor = Color("macOS/unemphasizedSelectedTextBackgroundColor", bundle: .myModule)
+
+        public let selectedTextBackgroundColor = Color("macOS/selectedTextBackgroundColor", bundle: .myModule)
+
+        public let systemBlue = Color("macOS/systemBlue", bundle: .myModule)
+
+        public let underPageBackgroundColor = Color("macOS/underPageBackgroundColor", bundle: .myModule)
+
+        public let secondaryLabelColor = Color("macOS/secondaryLabelColor", bundle: .myModule)
+
+        public let windowBackgroundColor = Color("macOS/windowBackgroundColor", bundle: .myModule)
+
+        public let gridColor = Color("macOS/gridColor", bundle: .myModule)
+
+        public let headerTextColor = Color("macOS/headerTextColor", bundle: .myModule)
+
+        public let selectedControlTextColor = Color("macOS/selectedControlTextColor", bundle: .myModule)
+
+        public let systemCyan = Color("macOS/systemCyan", bundle: .myModule)
+
+        public let findHighlightColor = Color("macOS/findHighlightColor", bundle: .myModule)
+
+        public let systemYellow = Color("macOS/systemYellow", bundle: .myModule)
+
+        public let systemBrown = Color("macOS/systemBrown", bundle: .myModule)
+
+        public let unemphasizedSelectedContentBackgroundColor = Color("macOS/unemphasizedSelectedContentBackgroundColor", bundle: .myModule)
+
+        public let selectedTextColor = Color("macOS/selectedTextColor", bundle: .myModule)
+
+        public let disabledControlTextColor = Color("macOS/disabledControlTextColor", bundle: .myModule)
+
+        public let systemMint = Color("macOS/systemMint", bundle: .myModule)
+
+        public let selectedMenuItemTextColor = Color("macOS/selectedMenuItemTextColor", bundle: .myModule)
+
+        public let quaternaryLabelColor = Color("macOS/quaternaryLabelColor", bundle: .myModule)
+
+        public let systemTeal = Color("macOS/systemTeal", bundle: .myModule)
+
+        public let placeholderTextColor = Color("macOS/placeholderTextColor", bundle: .myModule)
+
+        public let textColor = Color("macOS/textColor", bundle: .myModule)
+
+        public let separatorColor = Color("macOS/separatorColor", bundle: .myModule)
+
+        public let selectedContentBackgroundColor = Color("macOS/selectedContentBackgroundColor", bundle: .myModule)
+    }
+}
+
+public extension Color.MacOS {
+    func callAsFunction(_ constant: Color.macOSConstant) -> Color {
+        Color("macOS/\(constant.rawValue)", bundle: .myModule)
+    }
+}
+
+public extension Color {
+    static let macOS = MacOS()
+}
+
+public extension Color.MacOS {
+    var colors: [Color] {
+        Color.macOSConstant.allCases.map { Color.macOS($0) }
+    }
+
+    var colorNames: [String] {
+        Color.macOSConstant.allCases.map { $0.name }
+    }
 }
