@@ -4,52 +4,152 @@
 import SwiftUI
 
 public extension Color {
-    enum iOS {
-        public static let systemBackground = Color("iOS/systemBackground", bundle: .myModule)
-        public static let tertiaryLabel = Color("iOS/tertiaryLabel", bundle: .myModule)
-        public static let systemRed = Color("iOS/systemRed", bundle: .myModule)
-        public static let systemPurple = Color("iOS/systemPurple", bundle: .myModule)
-        public static let quaternarySystemFill = Color("iOS/quaternarySystemFill", bundle: .myModule)
-        public static let systemGroupedBackground = Color("iOS/systemGroupedBackground", bundle: .myModule)
-        public static let systemIndigo = Color("iOS/systemIndigo", bundle: .myModule)
-        public static let systemGreen = Color("iOS/systemGreen", bundle: .myModule)
-        public static let systemPink = Color("iOS/systemPink", bundle: .myModule)
-        public static let lightText = Color("iOS/lightText", bundle: .myModule)
-        public static let placeholderText = Color("iOS/placeholderText", bundle: .myModule)
-        public static let secondarySystemBackground = Color("iOS/secondarySystemBackground", bundle: .myModule)
-        public static let secondarySystemFill = Color("iOS/secondarySystemFill", bundle: .myModule)
-        public static let darkText = Color("iOS/darkText", bundle: .myModule)
-        public static let link = Color("iOS/link", bundle: .myModule)
-        public static let groupTableViewBackground = Color("iOS/groupTableViewBackground", bundle: .myModule)
-        public static let tertiarySystemGroupedBackground = Color("iOS/tertiarySystemGroupedBackground", bundle: .myModule)
-        public static let systemGray = Color("iOS/systemGray", bundle: .myModule)
-        public static let secondaryLabel = Color("iOS/secondaryLabel", bundle: .myModule)
-        public static let systemOrange = Color("iOS/systemOrange", bundle: .myModule)
-        public static let systemGray6 = Color("iOS/systemGray6", bundle: .myModule)
-        public static let tertiarySystemFill = Color("iOS/tertiarySystemFill", bundle: .myModule)
-        public static let separator = Color("iOS/separator", bundle: .myModule)
-        public static let secondarySystemGroupedBackground = Color("iOS/secondarySystemGroupedBackground", bundle: .myModule)
-        public static let quaternaryLabel = Color("iOS/quaternaryLabel", bundle: .myModule)
-        public static let systemBlue = Color("iOS/systemBlue", bundle: .myModule)
-        public static let tint = Color("iOS/tint", bundle: .myModule)
-        public static let systemGray3 = Color("iOS/systemGray3", bundle: .myModule)
-        public static let systemGray2 = Color("iOS/systemGray2", bundle: .myModule)
-        public static let systemCyan = Color("iOS/systemCyan", bundle: .myModule)
-        public static let systemYellow = Color("iOS/systemYellow", bundle: .myModule)
-        public static let systemBrown = Color("iOS/systemBrown", bundle: .myModule)
-        public static let systemGray4 = Color("iOS/systemGray4", bundle: .myModule)
-        public static let systemGray5 = Color("iOS/systemGray5", bundle: .myModule)
-        public static let opaqueSeparator = Color("iOS/opaqueSeparator", bundle: .myModule)
-        public static let label = Color("iOS/label", bundle: .myModule)
-        public static let systemFill = Color("iOS/systemFill", bundle: .myModule)
-        public static let systemMint = Color("iOS/systemMint", bundle: .myModule)
-        public static let tertiarySystemBackground = Color("iOS/tertiarySystemBackground", bundle: .myModule)
-        public static let systemTeal = Color("iOS/systemTeal", bundle: .myModule)
+    enum iOSConstant: String, CaseIterable {
+        case systemBackground
+        case tertiaryLabel
+        case systemRed
+        case systemPurple
+        case quaternarySystemFill
+        case systemGroupedBackground
+        case systemIndigo
+        case systemGreen
+        case systemPink
+        case lightText
+        case placeholderText
+        case secondarySystemBackground
+        case secondarySystemFill
+        case darkText
+        case link
+        case groupTableViewBackground
+        case tertiarySystemGroupedBackground
+        case systemGray
+        case secondaryLabel
+        case systemOrange
+        case systemGray6
+        case tertiarySystemFill
+        case separator
+        case secondarySystemGroupedBackground
+        case quaternaryLabel
+        case systemBlue
+        case tint
+        case systemGray3
+        case systemGray2
+        case systemCyan
+        case systemYellow
+        case systemBrown
+        case systemGray4
+        case systemGray5
+        case opaqueSeparator
+        case label
+        case systemFill
+        case systemMint
+        case tertiarySystemBackground
+        case systemTeal
+
+        var name: String { rawValue }
     }
 }
 
-extension Color.iOS {
-    public static let colors = [systemBackground, tertiaryLabel, systemRed, systemPurple, quaternarySystemFill, systemGroupedBackground, systemIndigo, systemGreen, systemPink, lightText, placeholderText, secondarySystemBackground, secondarySystemFill, darkText, link, groupTableViewBackground, tertiarySystemGroupedBackground, systemGray, secondaryLabel, systemOrange, systemGray6, tertiarySystemFill, separator, secondarySystemGroupedBackground, quaternaryLabel, systemBlue, tint, systemGray3, systemGray2, systemCyan, systemYellow, systemBrown, systemGray4, systemGray5, opaqueSeparator, label, systemFill, systemMint, tertiarySystemBackground, systemTeal]
+public extension Color {
+    struct IOS {
+        public let systemBackground = Color("iOS/systemBackground", bundle: .myModule)
 
-    public static let colorNames = ["systemBackground", "tertiaryLabel", "systemRed", "systemPurple", "quaternarySystemFill", "systemGroupedBackground", "systemIndigo", "systemGreen", "systemPink", "lightText", "placeholderText", "secondarySystemBackground", "secondarySystemFill", "darkText", "link", "groupTableViewBackground", "tertiarySystemGroupedBackground", "systemGray", "secondaryLabel", "systemOrange", "systemGray6", "tertiarySystemFill", "separator", "secondarySystemGroupedBackground", "quaternaryLabel", "systemBlue", "tint", "systemGray3", "systemGray2", "systemCyan", "systemYellow", "systemBrown", "systemGray4", "systemGray5", "opaqueSeparator", "label", "systemFill", "systemMint", "tertiarySystemBackground", "systemTeal"]
+        public let tertiaryLabel = Color("iOS/tertiaryLabel", bundle: .myModule)
+
+        public let systemRed = Color("iOS/systemRed", bundle: .myModule)
+
+        public let systemPurple = Color("iOS/systemPurple", bundle: .myModule)
+
+        public let quaternarySystemFill = Color("iOS/quaternarySystemFill", bundle: .myModule)
+
+        public let systemGroupedBackground = Color("iOS/systemGroupedBackground", bundle: .myModule)
+
+        public let systemIndigo = Color("iOS/systemIndigo", bundle: .myModule)
+
+        public let systemGreen = Color("iOS/systemGreen", bundle: .myModule)
+
+        public let systemPink = Color("iOS/systemPink", bundle: .myModule)
+
+        public let lightText = Color("iOS/lightText", bundle: .myModule)
+
+        public let placeholderText = Color("iOS/placeholderText", bundle: .myModule)
+
+        public let secondarySystemBackground = Color("iOS/secondarySystemBackground", bundle: .myModule)
+
+        public let secondarySystemFill = Color("iOS/secondarySystemFill", bundle: .myModule)
+
+        public let darkText = Color("iOS/darkText", bundle: .myModule)
+
+        public let link = Color("iOS/link", bundle: .myModule)
+
+        public let groupTableViewBackground = Color("iOS/groupTableViewBackground", bundle: .myModule)
+
+        public let tertiarySystemGroupedBackground = Color("iOS/tertiarySystemGroupedBackground", bundle: .myModule)
+
+        public let systemGray = Color("iOS/systemGray", bundle: .myModule)
+
+        public let secondaryLabel = Color("iOS/secondaryLabel", bundle: .myModule)
+
+        public let systemOrange = Color("iOS/systemOrange", bundle: .myModule)
+
+        public let systemGray6 = Color("iOS/systemGray6", bundle: .myModule)
+
+        public let tertiarySystemFill = Color("iOS/tertiarySystemFill", bundle: .myModule)
+
+        public let separator = Color("iOS/separator", bundle: .myModule)
+
+        public let secondarySystemGroupedBackground = Color("iOS/secondarySystemGroupedBackground", bundle: .myModule)
+
+        public let quaternaryLabel = Color("iOS/quaternaryLabel", bundle: .myModule)
+
+        public let systemBlue = Color("iOS/systemBlue", bundle: .myModule)
+
+        public let tint = Color("iOS/tint", bundle: .myModule)
+
+        public let systemGray3 = Color("iOS/systemGray3", bundle: .myModule)
+
+        public let systemGray2 = Color("iOS/systemGray2", bundle: .myModule)
+
+        public let systemCyan = Color("iOS/systemCyan", bundle: .myModule)
+
+        public let systemYellow = Color("iOS/systemYellow", bundle: .myModule)
+
+        public let systemBrown = Color("iOS/systemBrown", bundle: .myModule)
+
+        public let systemGray4 = Color("iOS/systemGray4", bundle: .myModule)
+
+        public let systemGray5 = Color("iOS/systemGray5", bundle: .myModule)
+
+        public let opaqueSeparator = Color("iOS/opaqueSeparator", bundle: .myModule)
+
+        public let label = Color("iOS/label", bundle: .myModule)
+
+        public let systemFill = Color("iOS/systemFill", bundle: .myModule)
+
+        public let systemMint = Color("iOS/systemMint", bundle: .myModule)
+
+        public let tertiarySystemBackground = Color("iOS/tertiarySystemBackground", bundle: .myModule)
+
+        public let systemTeal = Color("iOS/systemTeal", bundle: .myModule)
+    }
+}
+
+public extension Color.IOS {
+    func callAsFunction(_ constant: Color.iOSConstant) -> Color {
+        Color("iOS/\(constant.rawValue)", bundle: .myModule)
+    }
+}
+
+public extension Color {
+    static let iOS = IOS()
+}
+
+public extension Color.IOS {
+    var colors: [Color] {
+        Color.iOSConstant.allCases.map { Color.iOS($0) }
+    }
+
+    var colorNames: [String] {
+        Color.iOSConstant.allCases.map { $0.name }
+    }
 }

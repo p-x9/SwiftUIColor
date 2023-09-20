@@ -4,34 +4,98 @@
 import SwiftUI
 
 public extension Color {
-    enum tvOS {
-        public static let tertiaryLabel = Color("tvOS/tertiaryLabel", bundle: .myModule)
-        public static let systemRed = Color("tvOS/systemRed", bundle: .myModule)
-        public static let systemPurple = Color("tvOS/systemPurple", bundle: .myModule)
-        public static let systemIndigo = Color("tvOS/systemIndigo", bundle: .myModule)
-        public static let systemGreen = Color("tvOS/systemGreen", bundle: .myModule)
-        public static let systemPink = Color("tvOS/systemPink", bundle: .myModule)
-        public static let placeholderText = Color("tvOS/placeholderText", bundle: .myModule)
-        public static let link = Color("tvOS/link", bundle: .myModule)
-        public static let systemGray = Color("tvOS/systemGray", bundle: .myModule)
-        public static let secondaryLabel = Color("tvOS/secondaryLabel", bundle: .myModule)
-        public static let systemOrange = Color("tvOS/systemOrange", bundle: .myModule)
-        public static let separator = Color("tvOS/separator", bundle: .myModule)
-        public static let quaternaryLabel = Color("tvOS/quaternaryLabel", bundle: .myModule)
-        public static let systemBlue = Color("tvOS/systemBlue", bundle: .myModule)
-        public static let tint = Color("tvOS/tint", bundle: .myModule)
-        public static let systemCyan = Color("tvOS/systemCyan", bundle: .myModule)
-        public static let systemYellow = Color("tvOS/systemYellow", bundle: .myModule)
-        public static let systemBrown = Color("tvOS/systemBrown", bundle: .myModule)
-        public static let opaqueSeparator = Color("tvOS/opaqueSeparator", bundle: .myModule)
-        public static let label = Color("tvOS/label", bundle: .myModule)
-        public static let systemMint = Color("tvOS/systemMint", bundle: .myModule)
-        public static let systemTeal = Color("tvOS/systemTeal", bundle: .myModule)
+    enum tvOSConstant: String, CaseIterable {
+        case tertiaryLabel
+        case systemRed
+        case systemPurple
+        case systemIndigo
+        case systemGreen
+        case systemPink
+        case placeholderText
+        case link
+        case systemGray
+        case secondaryLabel
+        case systemOrange
+        case separator
+        case quaternaryLabel
+        case systemBlue
+        case tint
+        case systemCyan
+        case systemYellow
+        case systemBrown
+        case opaqueSeparator
+        case label
+        case systemMint
+        case systemTeal
+
+        var name: String { rawValue }
     }
 }
 
-extension Color.tvOS {
-    public static let colors = [tertiaryLabel, systemRed, systemPurple, systemIndigo, systemGreen, systemPink, placeholderText, link, systemGray, secondaryLabel, systemOrange, separator, quaternaryLabel, systemBlue, tint, systemCyan, systemYellow, systemBrown, opaqueSeparator, label, systemMint, systemTeal]
+public extension Color {
+    struct TvOS {
+        public let tertiaryLabel = Color("tvOS/tertiaryLabel", bundle: .myModule)
 
-    public static let colorNames = ["tertiaryLabel", "systemRed", "systemPurple", "systemIndigo", "systemGreen", "systemPink", "placeholderText", "link", "systemGray", "secondaryLabel", "systemOrange", "separator", "quaternaryLabel", "systemBlue", "tint", "systemCyan", "systemYellow", "systemBrown", "opaqueSeparator", "label", "systemMint", "systemTeal"]
+        public let systemRed = Color("tvOS/systemRed", bundle: .myModule)
+
+        public let systemPurple = Color("tvOS/systemPurple", bundle: .myModule)
+
+        public let systemIndigo = Color("tvOS/systemIndigo", bundle: .myModule)
+
+        public let systemGreen = Color("tvOS/systemGreen", bundle: .myModule)
+
+        public let systemPink = Color("tvOS/systemPink", bundle: .myModule)
+
+        public let placeholderText = Color("tvOS/placeholderText", bundle: .myModule)
+
+        public let link = Color("tvOS/link", bundle: .myModule)
+
+        public let systemGray = Color("tvOS/systemGray", bundle: .myModule)
+
+        public let secondaryLabel = Color("tvOS/secondaryLabel", bundle: .myModule)
+
+        public let systemOrange = Color("tvOS/systemOrange", bundle: .myModule)
+
+        public let separator = Color("tvOS/separator", bundle: .myModule)
+
+        public let quaternaryLabel = Color("tvOS/quaternaryLabel", bundle: .myModule)
+
+        public let systemBlue = Color("tvOS/systemBlue", bundle: .myModule)
+
+        public let tint = Color("tvOS/tint", bundle: .myModule)
+
+        public let systemCyan = Color("tvOS/systemCyan", bundle: .myModule)
+
+        public let systemYellow = Color("tvOS/systemYellow", bundle: .myModule)
+
+        public let systemBrown = Color("tvOS/systemBrown", bundle: .myModule)
+
+        public let opaqueSeparator = Color("tvOS/opaqueSeparator", bundle: .myModule)
+
+        public let label = Color("tvOS/label", bundle: .myModule)
+
+        public let systemMint = Color("tvOS/systemMint", bundle: .myModule)
+
+        public let systemTeal = Color("tvOS/systemTeal", bundle: .myModule)
+    }
+}
+
+public extension Color.TvOS {
+    func callAsFunction(_ constant: Color.tvOSConstant) -> Color {
+        Color("tvOS/\(constant.rawValue)", bundle: .myModule)
+    }
+}
+
+public extension Color {
+    static let tvOS = TvOS()
+}
+
+public extension Color.TvOS {
+    var colors: [Color] {
+        Color.tvOSConstant.allCases.map { Color.tvOS($0) }
+    }
+
+    var colorNames: [String] {
+        Color.tvOSConstant.allCases.map { $0.name }
+    }
 }

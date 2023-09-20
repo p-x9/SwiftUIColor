@@ -4,29 +4,83 @@
 import SwiftUI
 
 public extension Color {
-    enum watchOS {
-        public static let tertiaryLabel = Color("watchOS/tertiaryLabel", bundle: .myModule)
-        public static let systemRed = Color("watchOS/systemRed", bundle: .myModule)
-        public static let systemPurple = Color("watchOS/systemPurple", bundle: .myModule)
-        public static let systemIndigo = Color("watchOS/systemIndigo", bundle: .myModule)
-        public static let systemGreen = Color("watchOS/systemGreen", bundle: .myModule)
-        public static let systemPink = Color("watchOS/systemPink", bundle: .myModule)
-        public static let systemGray = Color("watchOS/systemGray", bundle: .myModule)
-        public static let secondaryLabel = Color("watchOS/secondaryLabel", bundle: .myModule)
-        public static let systemOrange = Color("watchOS/systemOrange", bundle: .myModule)
-        public static let quaternaryLabel = Color("watchOS/quaternaryLabel", bundle: .myModule)
-        public static let systemBlue = Color("watchOS/systemBlue", bundle: .myModule)
-        public static let systemCyan = Color("watchOS/systemCyan", bundle: .myModule)
-        public static let systemYellow = Color("watchOS/systemYellow", bundle: .myModule)
-        public static let systemBrown = Color("watchOS/systemBrown", bundle: .myModule)
-        public static let label = Color("watchOS/label", bundle: .myModule)
-        public static let systemMint = Color("watchOS/systemMint", bundle: .myModule)
-        public static let systemTeal = Color("watchOS/systemTeal", bundle: .myModule)
+    enum watchOSConstant: String, CaseIterable {
+        case tertiaryLabel
+        case systemRed
+        case systemPurple
+        case systemIndigo
+        case systemGreen
+        case systemPink
+        case systemGray
+        case secondaryLabel
+        case systemOrange
+        case quaternaryLabel
+        case systemBlue
+        case systemCyan
+        case systemYellow
+        case systemBrown
+        case label
+        case systemMint
+        case systemTeal
+
+        var name: String { rawValue }
     }
 }
 
-extension Color.watchOS {
-    public static let colors = [tertiaryLabel, systemRed, systemPurple, systemIndigo, systemGreen, systemPink, systemGray, secondaryLabel, systemOrange, quaternaryLabel, systemBlue, systemCyan, systemYellow, systemBrown, label, systemMint, systemTeal]
+public extension Color {
+    struct WatchOS {
+        public let tertiaryLabel = Color("watchOS/tertiaryLabel", bundle: .myModule)
 
-    public static let colorNames = ["tertiaryLabel", "systemRed", "systemPurple", "systemIndigo", "systemGreen", "systemPink", "systemGray", "secondaryLabel", "systemOrange", "quaternaryLabel", "systemBlue", "systemCyan", "systemYellow", "systemBrown", "label", "systemMint", "systemTeal"]
+        public let systemRed = Color("watchOS/systemRed", bundle: .myModule)
+
+        public let systemPurple = Color("watchOS/systemPurple", bundle: .myModule)
+
+        public let systemIndigo = Color("watchOS/systemIndigo", bundle: .myModule)
+
+        public let systemGreen = Color("watchOS/systemGreen", bundle: .myModule)
+
+        public let systemPink = Color("watchOS/systemPink", bundle: .myModule)
+
+        public let systemGray = Color("watchOS/systemGray", bundle: .myModule)
+
+        public let secondaryLabel = Color("watchOS/secondaryLabel", bundle: .myModule)
+
+        public let systemOrange = Color("watchOS/systemOrange", bundle: .myModule)
+
+        public let quaternaryLabel = Color("watchOS/quaternaryLabel", bundle: .myModule)
+
+        public let systemBlue = Color("watchOS/systemBlue", bundle: .myModule)
+
+        public let systemCyan = Color("watchOS/systemCyan", bundle: .myModule)
+
+        public let systemYellow = Color("watchOS/systemYellow", bundle: .myModule)
+
+        public let systemBrown = Color("watchOS/systemBrown", bundle: .myModule)
+
+        public let label = Color("watchOS/label", bundle: .myModule)
+
+        public let systemMint = Color("watchOS/systemMint", bundle: .myModule)
+
+        public let systemTeal = Color("watchOS/systemTeal", bundle: .myModule)
+    }
+}
+
+public extension Color.WatchOS {
+    func callAsFunction(_ constant: Color.watchOSConstant) -> Color {
+        Color("watchOS/\(constant.rawValue)", bundle: .myModule)
+    }
+}
+
+public extension Color {
+    static let watchOS = WatchOS()
+}
+
+public extension Color.WatchOS {
+    var colors: [Color] {
+        Color.watchOSConstant.allCases.map { Color.watchOS($0) }
+    }
+
+    var colorNames: [String] {
+        Color.watchOSConstant.allCases.map { $0.name }
+    }
 }
