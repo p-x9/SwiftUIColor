@@ -10,13 +10,13 @@ import SwiftUI
 import SwiftUIColor
 
 protocol ColorNamePairRepresentable {
-    static var colorNamePairs: [(name: String, color: Color)] { get }
-    static var colorNames: [String] { get }
-    static var colors: [Color] { get }
+    var colorNamePairs: [(name: String, color: Color)] { get }
+    var colorNames: [String] { get }
+    var colors: [Color] { get }
 }
 
 extension ColorNamePairRepresentable {
-    static var colorNamePairs: [(name: String, color: Color)] {
+    var colorNamePairs: [(name: String, color: Color)] {
         zip(colorNames, colors)
             .map { $0 }
             .sorted { lhs, rhs in
@@ -25,12 +25,12 @@ extension ColorNamePairRepresentable {
     }
 }
 
-extension Color.iOS: ColorNamePairRepresentable {}
-extension Color.macOS: ColorNamePairRepresentable {}
-extension Color.tvOS: ColorNamePairRepresentable {}
-extension Color.watchOS: ColorNamePairRepresentable {}
-extension Color.visionOS: ColorNamePairRepresentable {}
-extension Color.universal: ColorNamePairRepresentable {}
+extension Color.IOS: ColorNamePairRepresentable {}
+extension Color.MacOS: ColorNamePairRepresentable {}
+extension Color.TvOS: ColorNamePairRepresentable {}
+extension Color.WatchOS: ColorNamePairRepresentable {}
+extension Color.VisionOS: ColorNamePairRepresentable {}
+extension Color.Universal: ColorNamePairRepresentable {}
 
 
 struct ContentView: View {

@@ -8,21 +8,44 @@ Make system color defined in `UIColor`/`NSColor` available to SwiftUI Color.
    import SwiftUIColor
    ```
 2. Use
+
+   Get the color for each platform
    ```swift
    // universal system colors
-   Color.universal.systemRed
-   // color list
-   let colors: [Color] = Color.universal.colors
+   let color = Color.universal.systemRed
 
    // iOS system colors
-   Color.iOS.systemBackground
-   // color list
-   let colors: [Color] = Color.iOS.colors
+   let color = Color.iOS.systemBackground
 
    // macOS system colors
-   Color.macOS.secondarySystemFillColor
-   // color list
-   let colors: [Color] = Color.macOS.colors
+   let color = Color.macOS.secondarySystemFillColor
+
+   // and watchOS, tvOS...
+   ```
+
+   Another Style
+   ```swift
+   // universal system colors
+   let color: Color = .universal(.systemRed)
+
+   // iOS system colors
+   let color: Color = .iOS(systemBackground)
+
+   // macOS system colors
+   let color: Color = macOS(.secondarySystemFillColor)
+
+   // and watchOS, tvOS...
+   ```
+
+   list of colors
+   ```swift
+   // universal color list
+   let colors: [Color] = Color.universal.colors
+
+   list of color names
+   ```swift
+   // universal color name list
+   let colors: [Color] = Color.universal.colorNames
    ```
 
 ## Example

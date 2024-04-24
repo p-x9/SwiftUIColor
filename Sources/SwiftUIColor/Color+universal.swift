@@ -4,29 +4,83 @@
 import SwiftUI
 
 public extension Color {
-    enum universal {
-        public static let tertiaryLabel = Color("universal/tertiaryLabel", bundle: .myModule)
-        public static let systemRed = Color("universal/systemRed", bundle: .myModule)
-        public static let systemPurple = Color("universal/systemPurple", bundle: .myModule)
-        public static let systemIndigo = Color("universal/systemIndigo", bundle: .myModule)
-        public static let systemGreen = Color("universal/systemGreen", bundle: .myModule)
-        public static let systemPink = Color("universal/systemPink", bundle: .myModule)
-        public static let systemGray = Color("universal/systemGray", bundle: .myModule)
-        public static let secondaryLabel = Color("universal/secondaryLabel", bundle: .myModule)
-        public static let systemOrange = Color("universal/systemOrange", bundle: .myModule)
-        public static let quaternaryLabel = Color("universal/quaternaryLabel", bundle: .myModule)
-        public static let systemBlue = Color("universal/systemBlue", bundle: .myModule)
-        public static let systemCyan = Color("universal/systemCyan", bundle: .myModule)
-        public static let systemYellow = Color("universal/systemYellow", bundle: .myModule)
-        public static let systemBrown = Color("universal/systemBrown", bundle: .myModule)
-        public static let label = Color("universal/label", bundle: .myModule)
-        public static let systemMint = Color("universal/systemMint", bundle: .myModule)
-        public static let systemTeal = Color("universal/systemTeal", bundle: .myModule)
+    enum universalConstant: String, CaseIterable {
+        case tertiaryLabel
+        case systemRed
+        case systemPurple
+        case systemIndigo
+        case systemGreen
+        case systemPink
+        case systemGray
+        case secondaryLabel
+        case systemOrange
+        case quaternaryLabel
+        case systemBlue
+        case systemCyan
+        case systemYellow
+        case systemBrown
+        case label
+        case systemMint
+        case systemTeal
+
+        var name: String { rawValue }
     }
 }
 
-extension Color.universal {
-    public static let colors = [tertiaryLabel, systemRed, systemPurple, systemIndigo, systemGreen, systemPink, systemGray, secondaryLabel, systemOrange, quaternaryLabel, systemBlue, systemCyan, systemYellow, systemBrown, label, systemMint, systemTeal]
+public extension Color {
+    struct Universal {
+        public let tertiaryLabel = Color("universal/tertiaryLabel", bundle: .myModule)
 
-    public static let colorNames = ["tertiaryLabel", "systemRed", "systemPurple", "systemIndigo", "systemGreen", "systemPink", "systemGray", "secondaryLabel", "systemOrange", "quaternaryLabel", "systemBlue", "systemCyan", "systemYellow", "systemBrown", "label", "systemMint", "systemTeal"]
+        public let systemRed = Color("universal/systemRed", bundle: .myModule)
+
+        public let systemPurple = Color("universal/systemPurple", bundle: .myModule)
+
+        public let systemIndigo = Color("universal/systemIndigo", bundle: .myModule)
+
+        public let systemGreen = Color("universal/systemGreen", bundle: .myModule)
+
+        public let systemPink = Color("universal/systemPink", bundle: .myModule)
+
+        public let systemGray = Color("universal/systemGray", bundle: .myModule)
+
+        public let secondaryLabel = Color("universal/secondaryLabel", bundle: .myModule)
+
+        public let systemOrange = Color("universal/systemOrange", bundle: .myModule)
+
+        public let quaternaryLabel = Color("universal/quaternaryLabel", bundle: .myModule)
+
+        public let systemBlue = Color("universal/systemBlue", bundle: .myModule)
+
+        public let systemCyan = Color("universal/systemCyan", bundle: .myModule)
+
+        public let systemYellow = Color("universal/systemYellow", bundle: .myModule)
+
+        public let systemBrown = Color("universal/systemBrown", bundle: .myModule)
+
+        public let label = Color("universal/label", bundle: .myModule)
+
+        public let systemMint = Color("universal/systemMint", bundle: .myModule)
+
+        public let systemTeal = Color("universal/systemTeal", bundle: .myModule)
+    }
+}
+
+public extension Color.Universal {
+    func callAsFunction(_ constant: Color.universalConstant) -> Color {
+        Color("universal/\(constant.rawValue)", bundle: .myModule)
+    }
+}
+
+public extension Color {
+    static let universal = Universal()
+}
+
+public extension Color.Universal {
+    var colors: [Color] {
+        Color.universalConstant.allCases.map { Color.universal($0) }
+    }
+
+    var colorNames: [String] {
+        Color.universalConstant.allCases.map { $0.name }
+    }
 }
