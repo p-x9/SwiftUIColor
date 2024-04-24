@@ -3,7 +3,7 @@
 //  Example
 //
 //  Created by p-x9 on 2023/01/10.
-//  
+//
 //
 
 import SwiftUI
@@ -29,6 +29,7 @@ extension Color.IOS: ColorNamePairRepresentable {}
 extension Color.MacOS: ColorNamePairRepresentable {}
 extension Color.TvOS: ColorNamePairRepresentable {}
 extension Color.WatchOS: ColorNamePairRepresentable {}
+extension Color.VisionOS: ColorNamePairRepresentable {}
 extension Color.Universal: ColorNamePairRepresentable {}
 
 
@@ -79,6 +80,15 @@ struct ContentView: View {
             )
             .tabItem {
                 Label("watchOS", systemImage: "applewatch.watchface")
+            }
+
+            // visionOS
+            ColorList(
+                title: "visionOS",
+                colorNamePairs: Color.visionOS.colorNamePairs
+            )
+            .tabItem {
+                Label("visionOS", systemImage: "visionpro")
             }
 
         }

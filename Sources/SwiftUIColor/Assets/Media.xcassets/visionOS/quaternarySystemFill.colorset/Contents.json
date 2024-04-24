@@ -1,0 +1,27 @@
+{
+  "colors" : [
+    {
+      "color" : {
+        "color-space" : "extended-srgb",
+        "components" : {
+          "alpha" : "0.080",
+          "blue" : "0x80",
+          "green" : "0x74",
+          "red" : "0x74"
+        }
+      },
+      "idiom" : "universal"
+    },
+    {
+      "color" : {
+        "platform" : "XR",
+        "reference" : "quaternarySystemFillColor"
+      },
+      "idiom" : "vision"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
