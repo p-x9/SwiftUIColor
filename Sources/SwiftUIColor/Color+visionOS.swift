@@ -4,50 +4,146 @@
 import SwiftUI
 
 public extension Color {
-    enum visionOS {
-        public static let systemBackground = Color("visionOS/systemBackground", bundle: .myModule)
-        public static let tertiaryLabel = Color("visionOS/tertiaryLabel", bundle: .myModule)
-        public static let systemRed = Color("visionOS/systemRed", bundle: .myModule)
-        public static let systemPurple = Color("visionOS/systemPurple", bundle: .myModule)
-        public static let quaternarySystemFill = Color("visionOS/quaternarySystemFill", bundle: .myModule)
-        public static let systemGroupedBackground = Color("visionOS/systemGroupedBackground", bundle: .myModule)
-        public static let systemIndigo = Color("visionOS/systemIndigo", bundle: .myModule)
-        public static let systemGreen = Color("visionOS/systemGreen", bundle: .myModule)
-        public static let systemPink = Color("visionOS/systemPink", bundle: .myModule)
-        public static let lightText = Color("visionOS/lightText", bundle: .myModule)
-        public static let placeholderText = Color("visionOS/placeholderText", bundle: .myModule)
-        public static let secondarySystemBackground = Color("visionOS/secondarySystemBackground", bundle: .myModule)
-        public static let secondarySystemFill = Color("visionOS/secondarySystemFill", bundle: .myModule)
-        public static let darkText = Color("visionOS/darkText", bundle: .myModule)
-        public static let link = Color("visionOS/link", bundle: .myModule)
-        public static let groupTableViewBackground = Color("visionOS/groupTableViewBackground", bundle: .myModule)
-        public static let tertiarySystemGroupedBackground = Color("visionOS/tertiarySystemGroupedBackground", bundle: .myModule)
-        public static let systemGray = Color("visionOS/systemGray", bundle: .myModule)
-        public static let secondaryLabel = Color("visionOS/secondaryLabel", bundle: .myModule)
-        public static let systemOrange = Color("visionOS/systemOrange", bundle: .myModule)
-        public static let systemGray6 = Color("visionOS/systemGray6", bundle: .myModule)
-        public static let tertiarySystemFill = Color("visionOS/tertiarySystemFill", bundle: .myModule)
-        public static let separator = Color("visionOS/separator", bundle: .myModule)
-        public static let secondarySystemGroupedBackground = Color("visionOS/secondarySystemGroupedBackground", bundle: .myModule)
-        public static let quaternaryLabel = Color("visionOS/quaternaryLabel", bundle: .myModule)
-        public static let systemBlue = Color("visionOS/systemBlue", bundle: .myModule)
-        public static let tint = Color("visionOS/tint", bundle: .myModule)
-        public static let systemGray3 = Color("visionOS/systemGray3", bundle: .myModule)
-        public static let systemGray2 = Color("visionOS/systemGray2", bundle: .myModule)
-        public static let systemYellow = Color("visionOS/systemYellow", bundle: .myModule)
-        public static let systemBrown = Color("visionOS/systemBrown", bundle: .myModule)
-        public static let systemGray4 = Color("visionOS/systemGray4", bundle: .myModule)
-        public static let systemGray5 = Color("visionOS/systemGray5", bundle: .myModule)
-        public static let opaqueSeparator = Color("visionOS/opaqueSeparator", bundle: .myModule)
-        public static let label = Color("visionOS/label", bundle: .myModule)
-        public static let systemFill = Color("visionOS/systemFill", bundle: .myModule)
-        public static let tertiarySystemBackground = Color("visionOS/tertiarySystemBackground", bundle: .myModule)
-        public static let systemTeal = Color("visionOS/systemTeal", bundle: .myModule)
+    enum visionOSConstant: String, CaseIterable {
+        case systemBackground
+        case tertiaryLabel
+        case systemRed
+        case systemPurple
+        case quaternarySystemFill
+        case systemGroupedBackground
+        case systemIndigo
+        case systemGreen
+        case systemPink
+        case lightText
+        case placeholderText
+        case secondarySystemBackground
+        case secondarySystemFill
+        case darkText
+        case link
+        case groupTableViewBackground
+        case tertiarySystemGroupedBackground
+        case systemGray
+        case secondaryLabel
+        case systemOrange
+        case systemGray6
+        case tertiarySystemFill
+        case separator
+        case secondarySystemGroupedBackground
+        case quaternaryLabel
+        case systemBlue
+        case tint
+        case systemGray3
+        case systemGray2
+        case systemYellow
+        case systemBrown
+        case systemGray4
+        case systemGray5
+        case opaqueSeparator
+        case label
+        case systemFill
+        case tertiarySystemBackground
+        case systemTeal
+
+        var name: String { rawValue }
     }
 }
 
-extension Color.visionOS {
-    public static let colors = [systemBackground, tertiaryLabel, systemRed, systemPurple, quaternarySystemFill, systemGroupedBackground, systemIndigo, systemGreen, systemPink, lightText, placeholderText, secondarySystemBackground, secondarySystemFill, darkText, link, groupTableViewBackground, tertiarySystemGroupedBackground, systemGray, secondaryLabel, systemOrange, systemGray6, tertiarySystemFill, separator, secondarySystemGroupedBackground, quaternaryLabel, systemBlue, tint, systemGray3, systemGray2, systemYellow, systemBrown, systemGray4, systemGray5, opaqueSeparator, label, systemFill, tertiarySystemBackground, systemTeal]
+public extension Color {
+    struct VisionOS {
+        public let systemBackground = Color("visionOS/systemBackground", bundle: .myModule)
 
-    public static let colorNames = ["systemBackground", "tertiaryLabel", "systemRed", "systemPurple", "quaternarySystemFill", "systemGroupedBackground", "systemIndigo", "systemGreen", "systemPink", "lightText", "placeholderText", "secondarySystemBackground", "secondarySystemFill", "darkText", "link", "groupTableViewBackground", "tertiarySystemGroupedBackground", "systemGray", "secondaryLabel", "systemOrange", "systemGray6", "tertiarySystemFill", "separator", "secondarySystemGroupedBackground", "quaternaryLabel", "systemBlue", "tint", "systemGray3", "systemGray2", "systemYellow", "systemBrown", "systemGray4", "systemGray5", "opaqueSeparator", "label", "systemFill", "tertiarySystemBackground", "systemTeal"]
+        public let tertiaryLabel = Color("visionOS/tertiaryLabel", bundle: .myModule)
+
+        public let systemRed = Color("visionOS/systemRed", bundle: .myModule)
+
+        public let systemPurple = Color("visionOS/systemPurple", bundle: .myModule)
+
+        public let quaternarySystemFill = Color("visionOS/quaternarySystemFill", bundle: .myModule)
+
+        public let systemGroupedBackground = Color("visionOS/systemGroupedBackground", bundle: .myModule)
+
+        public let systemIndigo = Color("visionOS/systemIndigo", bundle: .myModule)
+
+        public let systemGreen = Color("visionOS/systemGreen", bundle: .myModule)
+
+        public let systemPink = Color("visionOS/systemPink", bundle: .myModule)
+
+        public let lightText = Color("visionOS/lightText", bundle: .myModule)
+
+        public let placeholderText = Color("visionOS/placeholderText", bundle: .myModule)
+
+        public let secondarySystemBackground = Color("visionOS/secondarySystemBackground", bundle: .myModule)
+
+        public let secondarySystemFill = Color("visionOS/secondarySystemFill", bundle: .myModule)
+
+        public let darkText = Color("visionOS/darkText", bundle: .myModule)
+
+        public let link = Color("visionOS/link", bundle: .myModule)
+
+        public let groupTableViewBackground = Color("visionOS/groupTableViewBackground", bundle: .myModule)
+
+        public let tertiarySystemGroupedBackground = Color("visionOS/tertiarySystemGroupedBackground", bundle: .myModule)
+
+        public let systemGray = Color("visionOS/systemGray", bundle: .myModule)
+
+        public let secondaryLabel = Color("visionOS/secondaryLabel", bundle: .myModule)
+
+        public let systemOrange = Color("visionOS/systemOrange", bundle: .myModule)
+
+        public let systemGray6 = Color("visionOS/systemGray6", bundle: .myModule)
+
+        public let tertiarySystemFill = Color("visionOS/tertiarySystemFill", bundle: .myModule)
+
+        public let separator = Color("visionOS/separator", bundle: .myModule)
+
+        public let secondarySystemGroupedBackground = Color("visionOS/secondarySystemGroupedBackground", bundle: .myModule)
+
+        public let quaternaryLabel = Color("visionOS/quaternaryLabel", bundle: .myModule)
+
+        public let systemBlue = Color("visionOS/systemBlue", bundle: .myModule)
+
+        public let tint = Color("visionOS/tint", bundle: .myModule)
+
+        public let systemGray3 = Color("visionOS/systemGray3", bundle: .myModule)
+
+        public let systemGray2 = Color("visionOS/systemGray2", bundle: .myModule)
+
+        public let systemYellow = Color("visionOS/systemYellow", bundle: .myModule)
+
+        public let systemBrown = Color("visionOS/systemBrown", bundle: .myModule)
+
+        public let systemGray4 = Color("visionOS/systemGray4", bundle: .myModule)
+
+        public let systemGray5 = Color("visionOS/systemGray5", bundle: .myModule)
+
+        public let opaqueSeparator = Color("visionOS/opaqueSeparator", bundle: .myModule)
+
+        public let label = Color("visionOS/label", bundle: .myModule)
+
+        public let systemFill = Color("visionOS/systemFill", bundle: .myModule)
+
+        public let tertiarySystemBackground = Color("visionOS/tertiarySystemBackground", bundle: .myModule)
+
+        public let systemTeal = Color("visionOS/systemTeal", bundle: .myModule)
+    }
+}
+
+public extension Color.VisionOS {
+    func callAsFunction(_ constant: Color.visionOSConstant) -> Color {
+        Color("visionOS/\(constant.rawValue)", bundle: .myModule)
+    }
+}
+
+public extension Color {
+    static let visionOS = VisionOS()
+}
+
+public extension Color.VisionOS {
+    var colors: [Color] {
+        Color.visionOSConstant.allCases.map { Color.visionOS($0) }
+    }
+
+    var colorNames: [String] {
+        Color.visionOSConstant.allCases.map { $0.name }
+    }
 }
