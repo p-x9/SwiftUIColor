@@ -14,6 +14,10 @@ private class CurrentBundleFinder {}
 
 extension Foundation.Bundle {
     static var myModule: Bundle = {
+        if #available(iOS 18.0, macOS 15.0, watchOS 11.0, tvOS 18.0, visionOS 2.0, *) {
+            return .module
+        }
+
         /* The name of your local package, prepended by "LocalPackages_" for iOS and "PackageName_" for macOS. You may have same PackageName and TargetName*/
         let bundleNameIOS = "SwiftUIColor_SwiftUIColor"
         let bundleNameMacOs = "SwiftUIColor_SwiftUIColor"
